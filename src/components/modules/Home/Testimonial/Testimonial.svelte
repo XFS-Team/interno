@@ -2,7 +2,7 @@
   import Title from "../../../common/Title/Title.svelte";
   import TestimonialContent from "./TestimonialItem.svelte";
 
-  let personInfors = [
+  const personInfors = [
     {
       avatar: "/images/Homepage/Testimonial/person_1.png",
       name: "Nattasha Mith",
