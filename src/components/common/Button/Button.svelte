@@ -1,6 +1,7 @@
 <script lang="ts">
   import { VariantProps, cva, cx } from "class-variance-authority";
   import type { HTMLButtonAttributes } from "svelte/elements";
+
   const button = cva("button", {
     variants: {
       intent: {
@@ -12,6 +13,7 @@
       },
     },
   });
+
   interface $$Props extends HTMLButtonAttributes, VariantProps<typeof button> {
     intent?: "default";
     color?: "primary" | "secondary";

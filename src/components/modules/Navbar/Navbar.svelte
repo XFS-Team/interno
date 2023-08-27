@@ -2,7 +2,7 @@
   import Logo from "../../common/Logo/Logo.svelte";
   import Text from "../../common/Text/Text.svelte";
 
-  let menuItems = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
+  const menuItems = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
 </script>
 
 <div class="flex justify-between items-center">
@@ -11,7 +11,7 @@
     {#each menuItems as menuItem}
       <li>
         <a href="/">
-          <Text class="text-[20px]">{menuItem}</Text>
+          <Text class="text-xl">{menuItem}</Text>
         </a>
       </li>
     {/each}

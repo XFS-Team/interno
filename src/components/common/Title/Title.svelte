@@ -18,6 +18,7 @@
     intent?: "default";
     color?: "default" | "secondary";
   }
+  
   export let intent: $$Props["intent"] = "default";
   export let color: $$Props["color"] = "default";
 </script>
