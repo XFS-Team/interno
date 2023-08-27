@@ -1,6 +1,6 @@
 <script>
-  import Title from "../../../common/Title/Title.svelte";
-  import Text from "../../../common/Text/Text.svelte";
+  import Title from "../../common/Title/Title.svelte";
+  import Text from "../../common/Text/Text.svelte";
 
   export let image;
   export let tag;

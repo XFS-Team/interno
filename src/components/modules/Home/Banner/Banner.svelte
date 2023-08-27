@@ -20,7 +20,7 @@
     </div>
     <div>
       <Button
-        class="mt-[21px] py-[26px] pl-12 pr-[49px] flex items-center gap-2.5 shadow-gray"
+        class="mt-[21px] py-[26px] pl-12 pr-[49px] flex items-center gap-2.5"
       >
         <Text intent="secondary" color="secondary">Get Started</Text>
         <img src="/images/arrow_right.svg" alt="arrowRight" />

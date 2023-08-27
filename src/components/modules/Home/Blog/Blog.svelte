@@ -2,7 +2,7 @@
   import Text from "../../../common/Text/Text.svelte";
   import Title from "../../../common/Title/Title.svelte";
 
-  import BlogItem from "./BlogItem.svelte";
+  import BlogItem from "../../Blog/BlogItem.svelte";
 
   const blogs = [
     {
