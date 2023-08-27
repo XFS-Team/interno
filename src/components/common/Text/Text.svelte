@@ -13,6 +13,7 @@
       color: {
         default: "text-slate",
         secondary: "text-white",
+        tertiary: "text-primary"
       },
     },
   });

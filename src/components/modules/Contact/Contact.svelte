@@ -13,7 +13,8 @@
   </Text>
   <Button
     color="secondary"
-    class="shadow-deep flex py-[26px] px-[37px] items-center mt-8 gap-[11px]"
+    boxShadow="secondary"
+    class="flex py-[26px] px-[37px] items-center mt-8 gap-[11px]"
   >
     <Text intent="secondary" class="text-white">Contact With Us</Text>
     <img src="/images/arrow_right_black.svg" alt="arrowRight" />
