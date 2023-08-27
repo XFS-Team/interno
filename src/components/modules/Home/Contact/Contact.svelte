@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="container my-[200px] px-[315px] py-[80px] bg-[#292F36] rounded-[70px] flex flex-col justify-center items-center"
+  class="container my-[200px] px-[315px] py-20 bg-[#292F36] rounded-[70px] flex flex-col justify-center items-center"
 >
   <Title class="text-[50px] text-white">Wanna join the interno?</Title>
   <Text class="mt-[11px] text-white">
@@ -13,7 +13,7 @@
   </Text>
   <Button
     color="secondary"
-    class="shadow-deep flex py-[26px] px-[37px] items-center mt-[32px] gap-[11px]"
+    class="shadow-deep flex py-[26px] px-[37px] items-center mt-8 gap-[11px]"
   >
     <Text intent="secondary" class="text-white">Contact With Us</Text>
     <img src="/images/arrow_right_black.svg" alt="arrowRight" />

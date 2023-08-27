@@ -32,7 +32,7 @@
     <Title class="text-[50px] text-center tracking-[1px]"
       >Follow Our Projects</Title
     >
-    <Text class="max-w-[737px] mt-[8px] text-center">
+    <Text class="max-w-[737px] mt-2 text-center">
       It is a long established fact that a reader will be distracted by the of
       readable content of page lookings at its layouts points.
     </Text>

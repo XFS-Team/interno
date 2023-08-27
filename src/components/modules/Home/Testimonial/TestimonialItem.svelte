@@ -20,7 +20,7 @@
         <Title class="text-[22px] tracking-[0.25px]">
           {name}
         </Title>
-        <Text class="text-[18px] tracking-[0.18px]">
+        <Text class="text-lg tracking-[0.18px]">
           {address}
         </Text>
       </div>

@@ -9,7 +9,7 @@
 
 <div class="">
   <img src={image} alt="ProjectImage" />
-  <div class="flex items-center justify-between mt-[24px]">
+  <div class="flex items-center justify-between mt-6">
     <div>
       <Title class="text-[25px] tracking-[0.5px]">
         {name}
