@@ -20,22 +20,22 @@
 </script>
 
 <div class="h-[457px] my-[200px] bg-[#F4F0EC]">
-  <div class="max-w-[1200px] h-[100%] mx-auto">
-    <div class="h-[100%] flex justify-center items-center">
+  <div class="max-w-[1200px] h-full mx-auto">
+    <div class="h-full flex justify-center items-center">
       <CounterItem number={counter1.number} content={counter1.content} />
-      <div class="w-[1px] h-[130px] bg-[#CDA274]" />
+      <div class="w-px h-[130px] bg-[#CDA274]" />
       <CounterItem
         class="pl-[76px]"
         number={counter2.number}
         content={counter2.content}
       />
-      <div class="w-[1px] h-[130px] bg-[#CDA274]" />
+      <div class="w-px h-[130px] bg-[#CDA274]" />
       <CounterItem
         class="pl-[76px]"
         number={counter3.number}
         content={counter3.content}
       />
-      <div class="w-[1px] h-[130px] bg-[#CDA274]" />
+      <div class="w-px h-[130px] bg-[#CDA274]" />
       <CounterItem
         class="pl-[76px]"
         number={counter4.number}
