@@ -30,7 +30,7 @@
     </div>
     <div class="mt-[47px]">
       <Button
-        class="mt-[21px] py-[26px] px-[31px] flex items-center gap-[10px] shadow-gray"
+        class="mt-[21px] py-[26px] px-[31px] flex items-center gap-2.5 shadow-gray"
       >
         <Text intent="secondary" color="secondary">Get Free Estimate</Text>
         <img src="/images/arrow_right.svg" alt="arrowRight" />

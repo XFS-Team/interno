@@ -9,11 +9,11 @@
     {title}
   </Title>
   <div class=" text-[22px] font-[400] leading-[150%] tracking-[0.22px]" />
-  <Text class="mt-[20px] text-center">
+  <Text class="mt-5 text-center">
     There are many variations of the passages of lorem Ipsum from available,
     majority.
   </Text>
-  <div class="cursor-pointer flex items-center gap-[12px] mt-[52px]">
+  <div class="cursor-pointer flex items-center gap-3 mt-[52px]">
     <Text intent="secondary">Read More</Text>
     <img src="/images/arrow_right.svg" alt="arrowRight" />
   </div>

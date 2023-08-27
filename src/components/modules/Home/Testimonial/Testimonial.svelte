@@ -31,7 +31,7 @@
     <Title class="max-w-[547px] text-center text-[50px] tracking-[1px]">
       What the People Thinks About Us
     </Title>
-    <div class="mt-[38px] flex justify-between items-center gap-[20px]">
+    <div class="mt-[38px] flex justify-between items-center gap-5">
       {#each personInfors as personInfor}
         <TestimonialContent {...personInfor} />
       {/each}

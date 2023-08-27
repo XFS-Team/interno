@@ -4,7 +4,7 @@
 
   import BlogItem from "./BlogItem.svelte";
 
-  let blogs = [
+  const blogs = [
     {
       image: "/images/Homepage/Blog/blog_1.png",
       tag: "Kitchan Design",
@@ -34,7 +34,7 @@
   <div class="flex flex-col justify-between items-center">
     <Title class="text-[50px] text-center tracking-[1px]">Articles & News</Title
     >
-    <Text class="max-w-[811px] mt-[12px] text-center"
+    <Text class="max-w-[811px] mt-3 text-center"
       >It is a long established fact that a reader will be distracted by the of
       readable content of a page when lookings at its layouts the points of
       using.</Text
