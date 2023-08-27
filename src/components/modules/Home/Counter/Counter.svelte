@@ -1,19 +1,19 @@
 <script>
   import CounterItem from "./CounterItem.svelte";
 
-  let counter1 = {
+  const counter1 = {
     number: 12,
     content: "Years Of Experiance",
   };
-  let counter2 = {
+  const counter2 = {
     number: 85,
     content: "Success Project",
   };
-  let counter3 = {
+  const counter3 = {
     number: 15,
     content: "Active Project",
   };
-  let counter4 = {
+  const counter4 = {
     number: 95,
     content: "Happy Customers",
   };

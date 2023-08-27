@@ -1,7 +1,7 @@
 <script>
   import ClientLogoItem from "./ClientLogoItem.svelte";
 
-  let images = [
+  const images = [
     "client_1.svg",
     "client_2.svg",
     "client_3.svg",

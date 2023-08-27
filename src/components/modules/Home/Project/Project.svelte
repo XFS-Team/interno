@@ -3,7 +3,7 @@
   import Title from "../../../common/Title/Title.svelte";
   import ProjectItem from "./ProjectItem.svelte";
 
-  let projects = [
+  const projects = [
     {
       image: "/images/Homepage/Project/project_1.png",
       name: "Modern Kitchan",
