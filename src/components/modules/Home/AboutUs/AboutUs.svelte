@@ -4,7 +4,7 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div class="container mb-[200px] flex items-center justify-between gap-[75px]">
+<div class="container my-[200px] flex items-center justify-between gap-[75px]">
   <div class="max-w-[472px]">
     <Title class="mt-[43px] text-[50px]">
       We Create The Art Of Stylish Living Stylishly
