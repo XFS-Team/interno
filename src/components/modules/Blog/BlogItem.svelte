@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   import Title from "../../common/Title/Title.svelte";
   import Text from "../../common/Text/Text.svelte";
 
-  export let image;
-  export let tag;
-  export let content;
-  export let date;
-  export let colorArrow;
+  export let image: string;
+  export let tag: string;
+  export let content: string;
+  export let date: string;
+  export let colorArrow: string;
 </script>
 
 <div

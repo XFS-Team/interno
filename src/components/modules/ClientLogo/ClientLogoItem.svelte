@@ -1,5 +1,5 @@
-<script>
-  export let image;
+<script lang="ts">
+  export let image: string;
 </script>
 
 <div>

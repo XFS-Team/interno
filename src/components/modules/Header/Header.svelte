@@ -1,5 +1,4 @@
-<script>
-  import Button from "../../common/Button/Button.svelte";
+<script lang="ts">
   import Navbar from "../Navbar/Navbar.svelte";
 </script>
 
