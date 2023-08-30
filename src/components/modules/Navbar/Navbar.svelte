@@ -11,7 +11,7 @@
     {#each menuItems as menuItem}
       <li>
         <a href="/">
-          <Text class="text-[20px]">{menuItem}</Text>
+          <Text class="text-xl">{menuItem}</Text>
         </a>
       </li>
     {/each}

@@ -104,7 +104,7 @@
       </ul>
     </div>
   </div>
-  <div class="border-t-[1px] mt-[134px] pt-[40px] pb-[46px]">
+  <div class="border-t-[1px] mt-[134px] pt-10 pb-[46px]">
     <img class="mx-auto" src="/images/copyright.svg" alt="copyright" />
   </div>
 </div>

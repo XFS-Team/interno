@@ -4,5 +4,5 @@
 
 <div class="flex items-center">
   <img src="/images/logo.svg" alt="logo" />
-  <Title class="text-[40px] ml-[10px]">Interno</Title>
+  <Title class="text-[40px] ml-2.5">Interno</Title>
 </div>
