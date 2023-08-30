@@ -1,11 +1,16 @@
-<script>
+<script lang="ts">
   import PointItem from "./PointItem.svelte";
 
   const title1 = "Use of Interior";
   const title2 = "Make An Art";
 
-  const contentItems = [
-    { number: 1, content: "We provide high quality design services." },
+  interface ContentItemType {
+    number: number; // Allow number type for the 'number' property
+    content: string;
+  }
+
+  const contentItems: ContentItemType[] = [
+    { number: 1, content: "We pdrovide high quality design services." },
     { number: 2, content: "Project on time and Latest Design." },
     { number: 3, content: "Scientific Skills For getting a better result." },
     { number: 4, content: "Renovations Benefit of Service" },

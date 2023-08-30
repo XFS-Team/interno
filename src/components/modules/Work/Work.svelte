@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import WorkItem from "./WorkItem.svelte";
   const titles = ["Project Plan", "Interior Work", "Realization"];
 </script>

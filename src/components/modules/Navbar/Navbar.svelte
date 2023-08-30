@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import Logo from "../../common/Logo/Logo.svelte";
   import Text from "../../common/Text/Text.svelte";
 
-  let menuItems = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
+  const menuItems = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
 </script>
 
 <div class="flex justify-between items-center">

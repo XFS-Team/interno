@@ -1,8 +1,8 @@
 <script lang="ts">
   import Text from "../../common/Text/Text.svelte";
 
-  export let image = "";
-  export let number = "";
+  export let image: string;
+  export let number: string;
 </script>
 
 <div class="relative flex items-center justify-center">

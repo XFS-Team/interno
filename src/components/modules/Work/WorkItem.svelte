@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import Text from "../../common/Text/Text.svelte";
   import Title from "../../common/Title/Title.svelte";
 
-  export let title;
+  export let title: string;
 </script>
 
 <div {...$$props} class="{$$props.class}">
