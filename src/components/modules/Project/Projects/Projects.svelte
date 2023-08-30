@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Pagination from "../../Pagination/Pagination.svelte";
   import Categories from "../Categories/Categories.svelte";
   import ProjectItem from "./ProjectItem.svelte";
