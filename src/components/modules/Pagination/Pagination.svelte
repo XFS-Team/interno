@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import PaginationItem from "./PaginationItem.svelte";
 
   const paginations = [

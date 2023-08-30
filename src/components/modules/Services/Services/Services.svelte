@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Work from "../../Work/Work.svelte";
   import WorkItem from "../../Work/WorkItem.svelte";
 

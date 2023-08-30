@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Title from "../../../common/Title/Title.svelte";
   import TestimonialContent from "./TestimonialItem.svelte";
 
