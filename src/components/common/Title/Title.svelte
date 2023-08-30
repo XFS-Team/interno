@@ -17,6 +17,7 @@
   interface $$Props extends VariantProps<typeof title> {
     intent?: "default";
     color?: "default" | "secondary";
+    class?: string;
   }
   
   export let intent: $$Props["intent"] = "default";

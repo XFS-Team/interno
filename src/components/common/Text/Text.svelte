@@ -13,7 +13,7 @@
       color: {
         default: "text-slate",
         secondary: "text-white",
-        tertiary: "text-primary"
+        tertiary: "text-primary",
       },
     },
   });
@@ -21,6 +21,7 @@
   interface $$Props extends VariantProps<typeof text> {
     intent?: "default" | "secondary";
     color?: "default" | "secondary";
+    class?: string;
   }
   
   export let intent: $$Props["intent"] = "default";

@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { VariantProps, cva, cx } from "class-variance-authority";
+  import { VariantProps, cva } from "class-variance-authority";
   import type { HTMLButtonAttributes } from "svelte/elements";
 
   const button = cva("button", {
     variants: {
       intent: {
-        default: "rounded-[18px]",
+        default: "text-lg py-[26px] px-10 rounded-[18px]",
       },
       color: {
         primary: "bg-dark-gray",
@@ -22,9 +22,10 @@
     intent?: "default";
     color?: "primary" | "secondary";
     boxShadow?: "primary" | "secondary";
+    class?: string;
   }
 
-  export let intent: $$Props["intent"] = "default";
+  export const intent: $$Props["intent"] = "default";
   export let color: $$Props["color"] = "primary";
   export let boxShadow: $$Props["boxShadow"] = "primary";
 </script>
