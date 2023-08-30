@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import Text from "../../../common/Text/Text.svelte";
 
-  export let name;
-  export let bgColor;
-  export let textColor;
+  export let name: string;
+  export let bgColor: string;
+  export let textColor: string;
 </script>
 
 <div class="py-[26px] px-[66px] {bgColor} rounded-[18px]">
