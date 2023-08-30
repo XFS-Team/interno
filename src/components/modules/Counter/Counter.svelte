@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import CounterItem from "./CounterItem.svelte";
 
   const counter1 = {

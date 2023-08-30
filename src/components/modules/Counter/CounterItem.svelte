@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import Text from "../../common/Text/Text.svelte";
   import Title from "../../common/Title/Title.svelte";
 
-  export let number;
-  export let content;
+  export let number: number;
+  export let content: string;
 </script>
 
 <div

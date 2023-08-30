@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ClientLogoItem from "./ClientLogoItem.svelte";
 
   const images = [
