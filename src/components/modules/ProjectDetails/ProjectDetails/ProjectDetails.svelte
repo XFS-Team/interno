@@ -60,7 +60,7 @@
       alt="projectDetails"
     />
     <img
-      class="absolute left-0 right-0 top-0 bottom-0 mx-auto my-auto"
+      class="absolute inset-0 mx-auto my-auto"
       src="/images/ProjectDetails/Details/zoom_icon.svg"
       alt="zoom"
     />

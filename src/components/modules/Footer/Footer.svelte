@@ -3,7 +3,7 @@
   import Text from "../../common/Text/Text.svelte";
   import Title from "../../common/Title/Title.svelte";
 
-  let iconData = [
+  const iconData = [
     {
       link: "/",
       image: "/images/Footer/facebook.svg",
@@ -22,7 +22,7 @@
     },
   ];
 
-  let pages = [
+  const pages = [
     { url: "/", label: "About Us" },
     { url: "/", label: "Our Projects" },
     { url: "/", label: "Our Team" },
@@ -30,7 +30,7 @@
     { url: "/", label: "Services" },
   ];
 
-  let services = [
+  const services = [
     { url: "/", label: "Kitchen" },
     { url: "/", label: "Living Area" },
     { url: "/", label: "Bathroom" },
@@ -38,7 +38,7 @@
     { url: "/", label: "Bedroom" },
   ];
 
-  let contacts = [
+  const contacts = [
     {
       info: "55 East Birchwood Ave. Brooklyn, New York 11201",
     },
