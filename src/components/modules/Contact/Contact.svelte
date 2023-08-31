@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="container my-[200px] px-[315px] py-20 bg-[#292F36] rounded-[70px] flex flex-col justify-center items-center"
+  class="container my-[200px] px-[315px] py-20 bg-dark-gray rounded-[70px] flex flex-col justify-center items-center"
 >
   <Title class="text-[50px] text-white">Wanna join the interno?</Title>
   <Text class="mt-[11px] text-white">
