@@ -1,46 +1,36 @@
 <script lang="ts">
   import CounterItem from "./CounterItem.svelte";
 
-  const counter1 = {
-    number: 12,
-    content: "Years Of Experiance",
-  };
-  const counter2 = {
-    number: 85,
-    content: "Success Project",
-  };
-  const counter3 = {
-    number: 15,
-    content: "Active Project",
-  };
-  const counter4 = {
-    number: 95,
-    content: "Happy Customers",
-  };
+  const counters = [
+    {
+      number: 12,
+      content: "Years Of Experiance",
+      display: "",
+    },
+    {
+      number: 85,
+      content: "Success Project",
+      display: "",
+    },
+    {
+      number: 15,
+      content: "Active Project",
+      display: "",
+    },
+    {
+      number: 95,
+      content: "Happy Customers",
+      display: "hidden",
+    },
+  ];
 </script>
 
-<div class="h-[457px] my-[200px] bg-[#F4F0EC]">
+<div class="h-[457px] my-[200px] bg-pale-cream">
   <div class="max-w-[1200px] h-full mx-auto">
     <div class="h-full flex justify-center items-center">
-      <CounterItem number={counter1.number} content={counter1.content} />
-      <div class="w-px h-[130px] bg-[#CDA274]" />
-      <CounterItem
-        class="pl-[76px]"
-        number={counter2.number}
-        content={counter2.content}
-      />
-      <div class="w-px h-[130px] bg-[#CDA274]" />
-      <CounterItem
-        class="pl-[76px]"
-        number={counter3.number}
-        content={counter3.content}
-      />
-      <div class="w-px h-[130px] bg-[#CDA274]" />
-      <CounterItem
-        class="pl-[76px]"
-        number={counter4.number}
-        content={counter4.content}
-      />
+      {#each counters as counter}
+        <CounterItem {...counter} />
+      {/each}
     </div>
   </div>
 </div>
