@@ -26,7 +26,7 @@
   </div>
 
   <div
-    class="bg-dark-gray py-[10px] px-[38px] rounded-[18px] max-w-[238px] absolute top-[256px] left-0 right-0 mx-auto {planDisplay}"
+    class="bg-dark-gray py-2.5 px-[38px] rounded-[18px] max-w-[238px] absolute top-[256px] left-0 right-0 mx-auto {planDisplay}"
   >
     <Text intent="secondary" color="secondary">{plan}</Text>
   </div>

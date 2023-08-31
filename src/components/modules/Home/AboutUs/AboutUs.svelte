@@ -21,17 +21,14 @@
         <img src="/images/Homepage/AboutUs/phone.svg" alt="phone" />
       </div>
       <div>
-        <Text
-          intent="secondary"
-          class="text-[24px] font-[700] tracking-[0.24px]">012345678</Text
+        <Text intent="secondary" class="text-[24px] font-bold tracking-[0.24px]"
+          >012345678</Text
         >
         <Text>Call Us Anytime</Text>
       </div>
     </div>
     <div class="mt-[47px]">
-      <Button
-        class="mt-[21px] py-[26px] px-[31px] flex items-center gap-2.5"
-      >
+      <Button class="mt-[21px] py-[26px] px-[31px] flex items-center gap-2.5">
         <Text intent="secondary" color="secondary">Get Free Estimate</Text>
         <img src="/images/arrow_right.svg" alt="arrowRight" />
       </Button>
