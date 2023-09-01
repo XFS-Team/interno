@@ -6,19 +6,19 @@
   const iconData = [
     {
       link: "/",
-      image: "/images/Footer/facebook.svg",
+      image: "/images/Socials/facebook.svg",
     },
     {
       link: "/",
-      image: "/images/Footer/twitter.svg",
+      image: "/images/Socials/twitter.svg",
     },
     {
       link: "/",
-      image: "/images/Footer/linkedIn.svg",
+      image: "/images/Socials/linkedin.svg",
     },
     {
       link: "/",
-      image: "/images/Footer/instagram.svg",
+      image: "/images/Socials/instagram.svg",
     },
   ];
 
