@@ -1,10 +1,6 @@
 <script lang="ts">
-  import Button from "../../../common/Button/Button.svelte";
   import Text from "../../../common/Text/Text.svelte";
   import Title from "../../../common/Title/Title.svelte";
-  import Input from "../../BlogDetails/Form/Input.svelte";
-
-  const inputName = "Enter Your Password";
 </script>
 
 <div
