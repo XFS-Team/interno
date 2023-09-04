@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1200px', // Set the max-width for the xl breakpoint to 1200px
+        },
+      },
       fontFamily: {
         sans: ["Jost", "sans-serif"],
         serif: ["DM Serif Display", "serif"],
@@ -19,12 +28,5 @@ module.exports = {
         deep: "0px 10px 20px 0px rgba(31, 32, 34, 1)",
       },
     },
-  },
-  container: {
-    maxWidth: "1230px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    paddingLeft: "15px",
-    paddingRight: "15px",
   },
 };
