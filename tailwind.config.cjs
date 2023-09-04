@@ -16,21 +16,15 @@ module.exports = {
       },
       boxShadow: {
         gray: "0px 10px 20px 0px rgba(192, 192, 192, 0.35)",
-        deep: "0px 10px 20px 0px rgba(31, 32, 34, 1)"
-      },   
+        deep: "0px 10px 20px 0px rgba(31, 32, 34, 1)",
+      },
     },
   },
-  plugins: [
-    function ({ addComponents }) {
-      addComponents({
-        ".container": {
-          maxWidth: "1230px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          paddingLeft: "15px",
-          paddingRight: "15px",
-        },
-      });
-    },
-  ],
-}
+  container: {
+    maxWidth: "1230px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+  },
+};
