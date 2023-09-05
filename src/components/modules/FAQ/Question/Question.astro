@@ -1,0 +1,49 @@
+---
+import Title from "../../../common/Title/Title.svelte";
+import { onMount } from "svelte";
+
+let isHidden = false;
+
+const getArrowImageSrc = () => {
+  return isHidden
+    ? "/images/FAQ/Icons/arrow_down.svg"
+    : "/images/FAQ/Icons/arrow_up.svg";
+};
+---
+
+<style>
+  .isHidden {
+    display: none;
+  }
+</style>
+
+<script define:vars={{ isHidden }}>
+  import { onMount } from "svelte";
+  console.log(isHidden);
+  onMount(() => {
+    const button = document.querySelector(".btn");
+    const content = document.querySelector(".content");
+
+    console.log(button);
+    console.log(content);
+    button?.addEventListener("click", () => {
+      console.log("Button was clicked!");
+      isHidden = !isHidden;
+      if (isHidden) {
+        content?.classList.add("isHidden");
+      } else {
+        content?.classList.remove("isHidden");
+      }
+    });
+  });
+</script>
+
+<div define:vars={{ getArrowImageSrc }} class="flex flex-col">
+  <button
+    class="flex items-center justify-between w-[400px] h-[50px] bg-pale-cream py-2 px-2 btn"
+  >
+    <Title>Title</Title>
+    <img id="arrowImg" src={getArrowImageSrc()} alt="" />
+  </button>
+  <div class="content w-[400px] h-[200px] bg-pale-cream">Content</div>
+</div>
