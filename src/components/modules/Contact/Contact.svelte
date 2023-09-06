@@ -1,7 +1,7 @@
 <script>
-  import Button from "../../../common/Button/Button.svelte";
-  import Text from "../../../common/Text/Text.svelte";
-  import Title from "../../../common/Title/Title.svelte";
+  import Button from "../../common/Button/Button.svelte";
+  import Text from "../../common/Text/Text.svelte";
+  import Title from "../../common/Title/Title.svelte";
 </script>
 
 <div
