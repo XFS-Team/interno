@@ -1,0 +1,92 @@
+---
+import Questions from "../Question/Questions.astro";
+
+type QuestionsData = {
+  titleHeader: string;
+  questionsData: { title: string; content: string }[];
+  image: string;
+  reverse: string;
+};
+
+const questionsData: QuestionsData[] = [
+  {
+    titleHeader: "Every Question Answered",
+    questionsData: [
+      {
+        title: "What is the Hipcouch Interior Design Service?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "So, how exactly does this work?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "What cities do you currently operate in?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "Hipcouch Interior Design Service?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "What kind of interior designers do you have?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+    ],
+    image: "/images/FAQ/Question/question_1.png",
+    reverse: "",
+  },
+  {
+    titleHeader: "Project related questions",
+    questionsData: [
+      {
+        title: "How long does it take?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "Can I use my existing furnishings?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "I put into redesigning my interior?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "What do your services cost?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+      {
+        title: "Do you offer free consultations?",
+        content:
+          "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.",
+      },
+    ],
+    image: "/images/FAQ/Question/question_2.png",
+    reverse: "flex-row-reverse",
+  },
+];
+---
+
+<div
+  class="container flex flex-col items-center justify-between gap-[150px] my-[200px]"
+>
+  {
+    questionsData.map(({ titleHeader, image, questionsData, reverse }) => (
+      <Questions
+        titleHeader={titleHeader}
+        image={image}
+        questionsData={questionsData}
+        reverse={reverse}
+      />
+    ))
+  }
+</div>
