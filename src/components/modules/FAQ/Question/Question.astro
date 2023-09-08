@@ -26,9 +26,10 @@ const { title, content }: Props = Astro.props as Props;
       button.addEventListener("click", () => {
         const contentElement = button.nextElementSibling;
         const image = button.querySelector("img");
+        const title = button.querySelector(".title");
 
-        if (contentElement && image) {
-          const isHidden = buttonStates[button.id] !== true;
+        if (contentElement && image && title) {
+          const isHidden = buttonStates[button.id] !== button.id;
 
           buttons.forEach((otherButton) => {
             if (otherButton !== button) {
@@ -36,6 +37,11 @@ const { title, content }: Props = Astro.props as Props;
               if (otherContentElement) {
                 otherContentElement.classList.add("isHidden");
                 buttonStates[otherButton.id] = true;
+
+                const otherTitle = otherButton.querySelector(".title");
+                if (otherTitle) {
+                  otherTitle.classList.remove("text-primary");
+                }
               }
             }
           });
@@ -44,8 +50,10 @@ const { title, content }: Props = Astro.props as Props;
 
           if (isHidden) {
             contentElement.classList.remove("isHidden");
+            title.classList.add("text-primary");
           } else {
             contentElement.classList.add("isHidden");
+            title.classList.remove("text-primary");
           }
 
           const arrowImageSrc = isHidden
@@ -62,7 +70,9 @@ const { title, content }: Props = Astro.props as Props;
   <button
     class="flex items-center justify-between w-[585px] btn pb-8 border-b-[1px] border-primary mb-[13px]"
   >
-    <Title class="text-[25px] leading-[150%] tracking-[0.25px]">{title}</Title>
+    <Title class="title text-[25px] leading-[150%] tracking-[0.25px]">
+      {title}
+    </Title>
     <img class="mr-[22px]" src="/images/FAQ/Icons/arrow_up.svg" alt="" />
   </button>
   <div class="content w-[585px] isHidden mb-9">
