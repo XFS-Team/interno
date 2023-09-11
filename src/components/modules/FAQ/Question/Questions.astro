@@ -1,0 +1,44 @@
+---
+import Title from "../../../common/Title/Title.svelte";
+import Question from "../Question/Question.astro";
+
+export interface Props {
+  titleHeader: string;
+  questionsData: { title: string; content: string }[];
+  image: string;
+  reverse: string;
+}
+
+const {
+  titleHeader,
+  questionsData = [],
+  image,
+  reverse,
+}: Props = Astro.props as Props;
+
+type QuestionData = {
+  title: string;
+  content: string;
+};
+
+const questions: QuestionData[] = questionsData.map(({ title, content }) => ({
+  title,
+  content,
+}));
+---
+
+<div class="flex flex-col items-center justify-between">
+  <Title class="text-[50px] leading-[150%] tracking-[0.5px] mb-[50px]">
+    {titleHeader}
+  </Title>
+  <div class={"flex items-center justify-between gap-[50px] " + reverse}>
+    <div>
+      {
+        questions.map(({ title, content }) => (
+          <Question title={title} content={content} />
+        ))
+      }
+    </div>
+    <img src={image} alt="" />
+  </div>
+</div>

@@ -1,14 +1,13 @@
 ---
+import Text from "../../../common/Text/Text.svelte";
 import Title from "../../../common/Title/Title.svelte";
-import { onMount } from "svelte";
 
-let isHidden = false;
+export interface Props {
+  title: string;
+  content: string;
+}
 
-const getArrowImageSrc = () => {
-  return isHidden
-    ? "/images/FAQ/Icons/arrow_down.svg"
-    : "/images/FAQ/Icons/arrow_up.svg";
-};
+const { title, content }: Props = Astro.props as Props;
 ---
 
 <style>
@@ -17,33 +16,66 @@ const getArrowImageSrc = () => {
   }
 </style>
 
-<script define:vars={{ isHidden }}>
-  import { onMount } from "svelte";
-  console.log(isHidden);
-  onMount(() => {
-    const button = document.querySelector(".btn");
-    const content = document.querySelector(".content");
+<script lang="ts">
+  const buttonStates = {};
 
-    console.log(button);
-    console.log(content);
-    button?.addEventListener("click", () => {
-      console.log("Button was clicked!");
-      isHidden = !isHidden;
-      if (isHidden) {
-        content?.classList.add("isHidden");
-      } else {
-        content?.classList.remove("isHidden");
-      }
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const contentElement = button.nextElementSibling;
+        const image = button.querySelector("img");
+        const title = button.querySelector(".title");
+
+        if (contentElement && image && title) {
+          const isHidden = buttonStates[button.id] !== button.id;
+
+          buttons.forEach((otherButton) => {
+            if (otherButton !== button) {
+              const otherContentElement = otherButton.nextElementSibling;
+              if (otherContentElement) {
+                otherContentElement.classList.add("isHidden");
+                buttonStates[otherButton.id] = true;
+
+                const otherTitle = otherButton.querySelector(".title");
+                if (otherTitle) {
+                  otherTitle.classList.remove("text-primary");
+                }
+              }
+            }
+          });
+
+          buttonStates[button.id] = !isHidden;
+
+          if (isHidden) {
+            contentElement.classList.remove("isHidden");
+            title.classList.add("text-primary");
+          } else {
+            contentElement.classList.add("isHidden");
+            title.classList.remove("text-primary");
+          }
+
+          const arrowImageSrc = isHidden
+            ? "/images/FAQ/Icons/arrow_down.svg"
+            : "/images/FAQ/Icons/arrow_up.svg";
+          image.src = arrowImageSrc;
+        }
+      });
     });
   });
 </script>
 
-<div define:vars={{ getArrowImageSrc }} class="flex flex-col">
+<div class="flex flex-col w-[585px] mb-[20px]">
   <button
-    class="flex items-center justify-between w-[400px] h-[50px] bg-pale-cream py-2 px-2 btn"
+    class="flex items-center justify-between w-[585px] btn pb-8 border-b-[1px] border-primary mb-[13px]"
   >
-    <Title>Title</Title>
-    <img id="arrowImg" src={getArrowImageSrc()} alt="" />
+    <Title class="title text-[25px] leading-[150%] tracking-[0.25px]">
+      {title}
+    </Title>
+    <img class="mr-[22px]" src="/images/FAQ/Icons/arrow_up.svg" alt="" />
   </button>
-  <div class="content w-[400px] h-[200px] bg-pale-cream">Content</div>
+  <div class="content w-[585px] isHidden mb-9">
+    <Text>{content}</Text>
+  </div>
 </div>
