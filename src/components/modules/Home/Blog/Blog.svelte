@@ -6,14 +6,14 @@
 
   const blogs = [
     {
-      image: "/images/Homepage/Blog/blog_1.png",
+      image: "/images/Blog/blog_1.png",
       tag: "Kitchan Design",
       content: "Let’s Get Solution For Building Construction Work",
       date: "26 December,2022",
       colorArrow: "default",
     },
     {
-      image: "/images/Homepage/Blog/blog_2.png",
+      image: "/images/Blog/blog_2.png",
       tag: "Living Design ",
       content: "Low Cost Latest Invented Interior Designing Ideas.",
       date: "22 December,2022",
@@ -21,7 +21,7 @@
       class: "bg-[#F4F0EC]",
     },
     {
-      image: "/images/Homepage/Blog/blog_3.png",
+      image: "/images/Blog/blog_3.png",
       tag: "Interior Design",
       content: "Best For Any Office & Business Interior Solution",
       date: "25 December,2022",

@@ -13,7 +13,7 @@
   {...$$props}
   class="relative p-[21px] rounded-[62px] border border-solid border-[#E7E7E7] flex flex-col {$$props.class}"
 >
-  <img src={image} alt="blogImage" />
+  <img class="h-[290px]" src={image} alt="blogImage" />
   <div
     class="rounded-t-lg absolute top-[249px] left-[41px] bg-white px-[11px] py-[6px]"
   >
