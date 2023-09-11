@@ -5,7 +5,7 @@
   const button = cva("button", {
     variants: {
       intent: {
-        default: "text-lg py-[26px] px-10 rounded-[18px]",
+        default: "text-lg rounded-[18px]",
       },
       color: {
         primary: "bg-dark-gray",

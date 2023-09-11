@@ -4,14 +4,18 @@
 
   export let number: number;
   export let content: string;
+  export let display: string;
 </script>
 
-<div
-  {...$$props}
-  class="mr-[54px] flex flex-col items-center justify-center {$$props.class}"
->
-  <Title color="secondary" class="text-[85px] tracking-[1.7px]">
-    {number}
-  </Title>
-  <Text>{content}</Text>
+<div class="flex items-center justify-center">
+  <div
+    {...$$props}
+    class="mr-[54px] flex flex-col items-center justify-center {$$props.class}"
+  >
+    <Title color="secondary" class="text-[85px] tracking-[1.7px]">
+      {number}
+    </Title>
+    <Text>{content}</Text>
+  </div>
+  <div class="w-px h-[130px] bg-primary mr-[76px] {display}" />
 </div>
