@@ -1,7 +1,7 @@
 <script>
-  import Button from "../../common/Button/Button.svelte";
-  import Text from "../../common/Text/Text.svelte";
-  import Title from "../../common/Title/Title.svelte";
+  import Button from "../../../common/Button/Button.svelte";
+  import Text from "../../../common/Text/Text.svelte";
+  import Title from "../../../common/Title/Title.svelte";
 </script>
 
 <div
@@ -13,8 +13,7 @@
   </Text>
   <Button
     color="secondary"
-    boxShadow="secondary"
-    class="flex py-[26px] px-[37px] items-center mt-8 gap-[11px]"
+    class="shadow-deep flex py-[26px] px-[37px] items-center mt-8 gap-[11px]"
   >
     <Text intent="secondary" class="text-white">Contact With Us</Text>
     <img src="/images/arrow_right_black.svg" alt="arrowRight" />

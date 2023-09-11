@@ -3,9 +3,9 @@
 
   const banner = {
     image: "/images/Services/Banner/banner.png",
-    title: "Services",
-    pageName: "Home / Services",
-    class: "py-[41px] px-[158px]"
+    title: "Service Single",
+    pageName: "Home / Service Single",
+    class: "py-[41px] px-[96px]"
   };
 </script>
 
