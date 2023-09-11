@@ -1,6 +1,5 @@
 <script lang="ts">
   import { VariantProps, cva } from "class-variance-authority";
-  import type { HTMLButtonAttributes } from "svelte/elements";
 
   const text = cva("text", {
     variants: {
@@ -13,16 +12,17 @@
       color: {
         default: "text-slate",
         secondary: "text-white",
-        tertiary: "text-primary"
+        tertiary: "text-primary",
       },
     },
   });
 
   interface $$Props extends VariantProps<typeof text> {
     intent?: "default" | "secondary";
-    color?: "default" | "secondary";
+    color?: "default" | "secondary" | "tertiary";
+    class?: string;
   }
-  
+
   export let intent: $$Props["intent"] = "default";
   export let color: $$Props["color"] = "default";
 </script>

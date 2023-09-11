@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import Text from "../../common/Text/Text.svelte";
   import Title from "../../common/Title/Title.svelte";
 
-  export let image;
-  export let title;
-  export let pageName;
+  export let image: string;
+  export let title: string;
+  export let pageName: string;
 </script>
 
 <div class="relative">

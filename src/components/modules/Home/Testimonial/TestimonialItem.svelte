@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
   import Text from "../../../common/Text/Text.svelte";
   import Title from "../../../common/Title/Title.svelte";
 
-  export let avatar;
-  export let name;
-  export let address;
-  export let bio;
+  export let avatar: string;
+  export let name: string;
+  export let address: string;
+  export let bio: string;
 </script>
 
 <div class="relative">

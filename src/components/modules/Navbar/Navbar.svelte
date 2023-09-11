@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Logo from "../../common/Logo/Logo.svelte";
   import Text from "../../common/Text/Text.svelte";
 

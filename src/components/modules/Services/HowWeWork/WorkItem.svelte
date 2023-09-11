@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   import Text from "../../../common/Text/Text.svelte";
   import Title from "../../../common/Title/Title.svelte";
 
-  export let image;
-  export let icon;
-  export let number;
-  export let title;
-  export let content;
+  export let image: string;
+  export let icon: string;
+  export let number: string;
+  export let title: string;
+  export let content: string;
 </script>
 
 <div

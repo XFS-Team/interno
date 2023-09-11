@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
   import PriceItem from "./PriceItem.svelte";
 
   const prices = [
     {
       title: "Design advices",
       price: "29",
+      priceColor: "text-dark-gray",
       borderColor: "border-primary border-b",
       planDisplay: "hidden",
+      plan: "",
       offerItems: [
         "General living space advices",
         "Rennovation advices",
@@ -39,8 +41,10 @@
     {
       title: "Furniture design",
       price: "59",
+      priceColor: "text-dark-gray",
       borderColor: "border-primary border-b",
       planDisplay: "hidden",
+      plan: "",
       offerItems: [
         "Furniture for living room",
         "Furniture refurbishment",

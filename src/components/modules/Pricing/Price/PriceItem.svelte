@@ -1,18 +1,18 @@
-<script>
+<script lang="ts">
   import Button from "../../../common/Button/Button.svelte";
   import Text from "../../../common/Text/Text.svelte";
   import Title from "../../../common/Title/Title.svelte";
 
-  export let title;
-  export let price;
-  export let priceColor;
-  export let borderColor;
-  export let plan;
-  export let planDisplay;
-  export let offerItems = [];
-  export let button;
-  export let buttonColor;
-  export let arrowColor;
+  export let title: string;
+  export let price: string;
+  export let priceColor: string;
+  export let borderColor: string;
+  export let plan: string;
+  export let planDisplay: string;
+  export let offerItems: string[];
+  export let button: string;
+  export let buttonColor: string;
+  export let arrowColor: string;
 </script>
 
 <div class="py-16 rounded-[33px] bg-pale-cream relative">
@@ -33,9 +33,7 @@
 
   <div class="my-7 mx-[45px] text-center mt-[30px] w-[279px]">
     {#each offerItems as offerItem}
-      <Text class="text-xl leading-[250%] tracking-[0.2px]"
-        >{offerItem}</Text
-      >
+      <Text class="text-xl leading-[250%] tracking-[0.2px]">{offerItem}</Text>
     {/each}
   </div>
 
