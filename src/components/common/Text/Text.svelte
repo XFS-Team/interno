@@ -13,13 +13,14 @@
         default: "text-slate",
         secondary: "text-white",
         tertiary: "text-primary",
+        quaternary: "text-dark-gray"
       },
     },
   });
 
   interface $$Props extends VariantProps<typeof text> {
     intent?: "default" | "secondary";
-    color?: "default" | "secondary" | "tertiary";
+    color?: "default" | "secondary" | "tertiary" | "quaternary";
     class?: string;
   }
 

@@ -1,0 +1,44 @@
+---
+import Content from "./Content/Content.astro";
+import IconFont from "./IconFont/IconFont.astro";
+import Photography from "./Photography/Photography.astro";
+
+type ContentsData = {
+  title: string;
+  content: string;
+  images: string[];
+};
+
+const contentsData: ContentsData[] = [
+  {
+    title: "Unsplash",
+    content:
+      "Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10, Image 11, Image 12, Image 13, Image 14, Image 15, Image 16, Image 17.",
+    images: [
+      "/images/License/Content/content_1.png",
+      "/images/License/Content/content_2.png",
+      "/images/License/Content/content_3.png",
+    ],
+  },
+  {
+    title: "Pexels",
+    content:
+      "Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10, Image 11, Image 12.",
+    images: [
+      "/images/License/Content/content_4.png",
+      "/images/License/Content/content_5.png",
+      "/images/License/Content/content_6.png",
+    ],
+  },
+];
+---
+
+<div class="container my-[200px] flex flex-col gap-y-[100px]">
+  <Photography />
+  {
+    contentsData.map(({ title, content, images }) => (
+      <Content title={title} content={content} images={images} />
+    ))
+  }
+  <IconFont />
+</div>
