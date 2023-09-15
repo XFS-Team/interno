@@ -1,0 +1,16 @@
+---
+import Text from "../../../../../common/Text/Text.svelte";
+import Title from "../../../../../common/Title/Title.svelte";
+
+export interface Props {
+  number: number;
+  content: string;
+}
+
+const { number, content }: Props = Astro.props as Props;
+---
+
+<div class="flex items-center gap-[15px]">
+  <Title color="secondary" class="text-xl">{number}</Title>
+  <Text>{content}</Text>
+</div>

@@ -1,0 +1,17 @@
+---
+import Text from "../../../../common/Text/Text.svelte";
+
+export interface Props {
+  bgColor: string;
+  colorName: string;
+  colorCode: string;
+}
+
+const { bgColor, colorName, colorCode }: Props = Astro.props as Props;
+---
+
+<div class="flex flex-col items-center">
+  <div class={"w-[171px] h-[171px] rounded-[30px] mb-3 " + bgColor}></div>
+  <Text intent="secondary" class="leading-[150%]">{colorName}</Text>
+  <Text intent="secondary" class="leading-[150%]">{colorCode}</Text>
+</div>
