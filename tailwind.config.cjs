@@ -22,6 +22,7 @@ module.exports = {
         slate: "#4D5053",
         "pale-cream": "#F4F0EC",
         white: "#FFFFFF",
+        "light-gray" : "#F6F6F6"
       },
       boxShadow: {
         gray: "0px 10px 20px 0px rgba(192, 192, 192, 0.35)",

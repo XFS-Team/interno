@@ -1,0 +1,12 @@
+---
+import Text from "../../../../../common/Text/Text.svelte";
+
+export interface Props {
+  content: string;
+  contentStyle: string;
+}
+
+const { content, contentStyle }: Props = Astro.props as Props;
+---
+
+<Text class={"w-[674px] " + contentStyle}>{content}</Text>

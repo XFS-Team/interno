@@ -1,0 +1,70 @@
+---
+import Text from "../../../../../common/Text/Text.svelte";
+import Title from "../../../../../common/Title/Title.svelte";
+import TypographyItem from "./TypographyItem.astro";
+
+type TypographyData = {
+  title: string;
+  titleSize: string;
+  content: string;
+};
+
+const typographyData: TypographyData[] = [
+  {
+    title: "Heading 01 Text",
+    titleSize: "text-[50px]",
+    content: "DM Serif Display - 50px",
+  },
+  {
+    title: "Heading 02 Text",
+    titleSize: "text-[35px]",
+    content: "DM Serif Display - 35px",
+  },
+  {
+    title: "Heading 03 Text",
+    titleSize: "text-[25px]",
+    content: "DM Serif Display - 25px",
+  },
+  {
+    title: "Heading 04 Text",
+    titleSize: "text-[22px]",
+    content: "DM Serif Display - 22px",
+  },
+  {
+    title: "Heading 05 Text",
+    titleSize: "text-xl",
+    content: "DM Serif Display - 20px",
+  },
+  {
+    title: "Heading 06 Text",
+    titleSize: "text-lg",
+    content: "DM Serif Display - 18px",
+  },
+];
+---
+
+<div class="flex items-start gap-[42px]">
+  <div class="flex flex-col items-start gap-y-[19px]">
+    <Title class="text-[50px] leading-[125%]">Typography</Title>
+    <Text class="w-[310px]">
+      Headings, body and other common text elements.
+    </Text>
+  </div>
+  <div class="flex flex-col items-start gap-y-[70px]">
+    <div class="flex flex-col items-start gap-y-1">
+      <Title class="text-[85px] leading-[125%]">Disply 01 Text</Title>
+      <Text color="tertiary" class="">DM Serif Display - 85px</Text>
+    </div>
+    <div class="flex flex-col items-start gap-y-[25px]">
+      {
+        typographyData.map(({ title, titleSize, content }) => (
+          <TypographyItem
+            title={title}
+            titleSize={titleSize}
+            content={content}
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>

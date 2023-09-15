@@ -1,0 +1,51 @@
+---
+import Text from "../../../../common/Text/Text.svelte";
+import Title from "../../../../common/Title/Title.svelte";
+import ColorItem from "./ColorItem.astro";
+
+type ColorData = {
+  bgColor: string;
+  colorName: string;
+  colorCode: string;
+};
+
+const colorData: ColorData[] = [
+  {
+    bgColor: "bg-primary",
+    colorName: "Primary 1",
+    colorCode: "#CDA274",
+  },
+  {
+    bgColor: "bg-dark-gray",
+    colorName: "Primary 2",
+    colorCode: "#292F36",
+  },
+  {
+    bgColor: "bg-pale-cream",
+    colorName: "Primary 3",
+    colorCode: "#F4F0EC",
+  },
+];
+---
+
+<div
+  class="flex items-center justify-between gap-[180px] rounded-[70px] py-[94px] px-[63px] bg-light-gray"
+>
+  <div class="w-[310px]">
+    <Title class="text-[50px] leading-[125%] mb-3">Color</Title>
+    <Text>
+      Primaries, shades and text and any other color style used in Intrno.
+    </Text>
+  </div>
+  <div class="flex items-center gap-[35px]">
+    {
+      colorData.map(({ bgColor, colorName, colorCode }) => (
+        <ColorItem
+          bgColor={bgColor}
+          colorName={colorName}
+          colorCode={colorCode}
+        />
+      ))
+    }
+  </div>
+</div>
