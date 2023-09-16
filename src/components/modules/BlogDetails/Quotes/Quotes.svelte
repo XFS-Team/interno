@@ -8,7 +8,7 @@
 >
   <Title
     color="secondary"
-    class="w-[100px] h-[132px] text-[200px] italic tracking-[4px]">"</Title
+    class="w-[150px] h-[132px] text-[200px] italic tracking-[4px] rotate-180">“</Title
   >
   <Title
     color="secondary" 

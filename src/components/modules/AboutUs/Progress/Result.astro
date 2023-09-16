@@ -1,0 +1,26 @@
+---
+import ContentItem from "./ContentItem.astro";
+type ProgressData = {
+  title: string;
+  content: string;
+  buttonName: string;
+};
+
+const progressData: ProgressData[] = [
+  {
+    title: "The End Result",
+    content:
+      "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.",
+    buttonName: "Our Portfolio",
+  },
+];
+---
+
+<div class="flex items-center gap-[90px]">
+  <img src="./images/AboutUs/Progress/result.png" alt="" />
+  {
+    progressData.map(({ title, content, buttonName }) => (
+      <ContentItem title={title} content={content} buttonName={buttonName} />
+    ))
+  }
+</div>
