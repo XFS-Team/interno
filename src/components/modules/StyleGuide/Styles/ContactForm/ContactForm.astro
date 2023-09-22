@@ -8,10 +8,16 @@ const inputs = ["Name", "Email", "Website", "Phone"];
 const textareaName = "Hello Iam Intrested in..";
 ---
 
-<div class="flex items-start gap-[100px]">
-  <Title class="w-[301px] text-[50px] leading-[125%]">Contact Form</Title>
-  <div class="w-[800px] flex flex-col items-end">
-    <div class="flex flex-wrap items-center justify-between gap-y-[50px]">
+<div
+  class="flex flex-col lg:flex-row items-center lg:items-start gap-[50px] lg:gap-[100px]"
+>
+  <Title class="lg:w-[301px] text-[35px] lg:text-[50px] leading-[125%]">
+    Contact Form
+  </Title>
+  <div class="lg:w-[800px] flex flex-col items-center lg:items-end">
+    <div
+      class="flex flex-wrap items-center gap-[10px] justify-center lg:justify-between gap-y-[50px]"
+    >
       {inputs.map((input) => <Input name={input} />)}
       <textarea
         class="w-full outline-none text-[22px] text-slate leading-[150%] tracking-[0.22px] border-b-[1px] border-solid border-[#000] h-[175px]"

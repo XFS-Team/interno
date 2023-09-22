@@ -27,14 +27,14 @@ const paragraphData: ParagraphData[] = [
 ];
 ---
 
-<div class="flex items-start gap-[42px]">
-  <div class="flex flex-col items-start gap-y-[19px]">
-    <Title class="text-[50px] leading-[125%]">Paragraph</Title>
-    <Text class="w-[310px]">
+<div class="flex flex-col lg:flex-row items-center lg:items-start gap-[42px]">
+  <div class="flex flex-col items-center lg:items-start gap-y-[19px]">
+    <Title class="text-[35px] lg:text-[50px] leading-[125%]">Paragraph</Title>
+    <Text class="lg:w-[310px]">
       Paragraph, body and other common text elements.
     </Text>
   </div>
-  <div class="flex flex-col items-start gap-y-[25px]">
+  <div class="flex flex-col items-center lg:items-start gap-y-[25px]">
     {
       paragraphData.map(({ title, content }) => (
         <ParagraphItem title={title} content={content} />

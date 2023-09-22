@@ -5,7 +5,7 @@
     image: "/images/StyleGuide/Banner/banner.png",
     title: "Style Guide",
     pageName: "Home / Style guide",
-    class: "py-[41px] px-[120px]",
+    class: "py-[41px] lg:px-[120px]",
   };
 </script>
 

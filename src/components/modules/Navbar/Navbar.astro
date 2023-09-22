@@ -1,0 +1,84 @@
+---
+import { onMount } from "svelte";
+import Logo from "../../common/Logo/Logo.svelte";
+import Text from "../../common/Text/Text.svelte";
+
+const menuItems = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
+---
+
+<script lang="ts">
+  const buttonStates = {};
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const menu = document.querySelector(".menu");
+
+        const isHidden = !buttonStates[button.id];
+
+        if (isHidden) {
+          menu.classList.remove("isHidden");
+          menu.classList.add("show");
+          buttonStates[button.id] = true;
+        } else {
+          menu.classList.add("isHidden");
+          menu.classList.remove("show");
+          buttonStates[button.id] = false;
+        }
+      });
+    });
+  });
+</script>
+
+<div class="flex justify-between items-center">
+  <Logo />
+  <ul class="hidden lg:flex gap-[38px] items-center">
+    {
+      menuItems.map((menuItem) => (
+        <li>
+          <a href="/">
+            <Text class="text-xl">{menuItem}</Text>
+          </a>
+        </li>
+      ))
+    }
+    <li class="cursor-pointer">
+      <img src="/images/search.svg" alt="search" />
+    </li>
+  </ul>
+  <button class="lg:hidden btn">
+    <img class="w-[36px]" src="/images/menu-icon.svg" alt="menu" />
+  </button>
+</div>
+
+<div
+  class="menu isHidden lg:hidden absolute top-22 right-[20px] py-[20px] bg-white"
+>
+  <div class="flex flex-col gap-y-[15px]">
+    {
+      menuItems.map((menuItem) => (
+        <a href="/">
+          <Text class="text-xl">{menuItem}</Text>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .isHidden {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 0 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+</style>

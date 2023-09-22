@@ -4,12 +4,12 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div class="container my-[200px] flex items-center justify-between gap-[75px]">
-  <div class="max-w-[472px]">
-    <Title class="mt-[43px] text-[50px]">
+<div class="container my-[100px] lg:my-[200px] flex flex-col-reverse lg:flex-row items-center justify-between gap-[75px]">
+  <div class="w-full md:max-w-[472px] flex flex-col items-center lg:items-start">
+    <Title class="text-center md:text-left mt-[43px] text-[35px] lg:text-[50px]">
       We Create The Art Of Stylish Living Stylishly
     </Title>
-    <Text class="mt-[33px]">
+    <Text class="text-center md:text-left mt-[33px]">
       It is a long established fact that a reader will be distracted by the of
       readable content of a page when lookings at its layouts the points of
       using that it has a more-or-less normal.
