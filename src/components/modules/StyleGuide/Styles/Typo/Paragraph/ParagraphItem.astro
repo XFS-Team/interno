@@ -10,7 +10,7 @@ export interface Props {
 const { title, content }: Props = Astro.props as Props;
 ---
 
-<div class="w-[660px] flex flex-col items-start gap-y-5">
-    <Title class="text-xl leading-[125%]">{title}</Title>
-    <Text>{content}</Text>
+<div class="lg:w-[660px] flex flex-col items-center lg:items-start gap-y-5">
+  <Title class="text-xl text-center leading-[125%]">{title}</Title>
+  <Text>{content}</Text>
 </div>

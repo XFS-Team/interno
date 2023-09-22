@@ -5,15 +5,15 @@
     variants: {
       intent: {
         default:
-          "text-[22px] font-normal font-sans leading-[150%] tracking-[0.22px]",
+          "text-center lg:text-left text-[22px] font-normal font-sans leading-[150%] tracking-[0.22px]",
         secondary:
-          "text-lg font-semibold font-sans leading-[125%] tracking-[0.36px]",
+          "text-center lg:text-left text-lg font-semibold font-sans leading-[125%] tracking-[0.36px]",
       },
       color: {
         default: "text-slate",
         secondary: "text-white",
         tertiary: "text-primary",
-        quaternary: "text-dark-gray"
+        quaternary: "text-dark-gray",
       },
     },
   });

@@ -32,7 +32,7 @@
 
 <div class="container">
   <div class="flex flex-col justify-between items-center">
-    <Title class="text-[50px] text-center tracking-[1px]">Articles & News</Title
+    <Title class="text-[35px] lg:text-[50px] text-center tracking-[1px]">Articles & News</Title
     >
     <Text class="max-w-[811px] mt-3 text-center"
       >It is a long established fact that a reader will be distracted by the of
@@ -40,7 +40,7 @@
       using.</Text
     >
   </div>
-  <div class="mt-[52px] flex justify-between items-center gap-[27px]">
+  <div class="mt-[52px] flex flex-col lg:flex-row justify-between items-center gap-[27px]">
     {#each blogs as blog}
       <BlogItem {...blog} />
     {/each}

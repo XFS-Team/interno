@@ -7,12 +7,13 @@
   export let pageName: string;
 </script>
 
-<div class="relative">
+<div class="lg:relative">
   <img class="mx-auto" src={image} alt="banner" />
-  <div {...$$props}
-    class="absolute bottom-0 right-0 left-0 mx-auto bg-white rounded-t-[37px] max-w-[503px] {$$props.class}"
+  <div
+    {...$$props}
+    class="lg:absolute bottom-0 right-0 left-0 mx-auto bg-white rounded-t-[37px] max-w-[503px] {$$props.class}"
   >
-    <Title class="text-[50px] text-center">{title}</Title>
+    <Title class="text-[35px] lg:text-[50px] text-center">{title}</Title>
     <Text class="text-center">{pageName}</Text>
   </div>
 </div>

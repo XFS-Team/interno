@@ -5,7 +5,8 @@
   const title = cva("title", {
     variants: {
       intent: {
-        default: "font-normal font-serif leading-[125%]",
+        default:
+          "text-center lg:text-left font-normal font-serif leading-[125%]",
       },
       color: {
         default: "text-dark-gray",

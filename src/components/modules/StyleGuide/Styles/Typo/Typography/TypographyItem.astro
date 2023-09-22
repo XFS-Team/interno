@@ -11,9 +11,9 @@ export interface Props {
 const { title, titleSize, content }: Props = Astro.props as Props;
 ---
 
-<div class="w-[346px] border-b-[1px] border-[#000] pb-[17px]">
+<div class="lg:w-[346px] border-b-[1px] border-black pb-[17px]">
   <Title class={"leading-[125%] mb-[11px] " + titleSize}>{title}</Title>
-  <Text color="tertiary" class="leading-[125%] text-[18px]">
+  <Text color="tertiary" class="leading-[125%] text-lg">
     {content}
   </Text>
 </div>

@@ -5,7 +5,7 @@
 
 <div
   {...$$props}
-  class="container mt-[200px] flex justify-center items-center gap-[42px] {$$props.class}"
+  class="container mt-[100px] lg:mt-[200px] flex flex-col md:flex-row justify-center items-center gap-[42px] {$$props.class}"
 >
   {#each titles as title}
     <WorkItem {title} />

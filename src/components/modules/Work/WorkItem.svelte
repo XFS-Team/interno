@@ -7,7 +7,7 @@
 
 <div {...$$props} class="{$$props.class}">
   <div class="max-w-[358px] flex flex-col items-center justify-between">
-    <Title class="text-[25px]">
+    <Title class="text-[35px] lg:text-[25px]">
       {title}
     </Title>
     <div class=" text-[22px] font-[400] leading-[150%] tracking-[0.22px]" />

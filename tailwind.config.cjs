@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       container: {
+        padding: "20px",
         center: true,
         screens: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1200px', // Set the max-width for the xl breakpoint to 1200px
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1240px", // Set the max-width for the xl breakpoint to 1200px
         },
       },
       fontFamily: {
@@ -22,11 +23,19 @@ module.exports = {
         slate: "#4D5053",
         "pale-cream": "#F4F0EC",
         white: "#FFFFFF",
-        "light-gray" : "#F6F6F6"
+        "light-gray": "#F6F6F6",
       },
       boxShadow: {
         gray: "0px 10px 20px 0px rgba(192, 192, 192, 0.35)",
         deep: "0px 10px 20px 0px rgba(31, 32, 34, 1)",
+      },
+      screens: {
+        xs: "475px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },

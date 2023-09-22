@@ -10,7 +10,7 @@
   ];
 </script>
 
-<div class="container my-[150px] flex justify-center items-center gap-[108px]">
+<div class="container my-[100px] lg:my-[150px] flex flex-col lg:flex-row justify-center items-center gap-[108px]">
   {#each images as image}
     <ClientLogoItem {image} />
   {/each}

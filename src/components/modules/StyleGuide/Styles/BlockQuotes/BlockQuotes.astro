@@ -3,20 +3,24 @@ import Text from "../../../../common/Text/Text.svelte";
 import Title from "../../../../common/Title/Title.svelte";
 ---
 
-<div class="flex items-start justify-between">
-  <Title class="text-[50px] leading-[125%]">Block Quotes</Title>
+<div
+  class="flex flex-col lg:flex-row items-center lg:items-start justify-between"
+>
+  <Title class="text-[35px] lg:text-[50px] leading-[125%] mb-[20px] lg:mb-0">
+    Block Quotes
+  </Title>
   <div
-    class="pt-[30px] pb-[53px] px-[227px] rounded-[50px] bg-pale-cream flex flex-col items-center"
+    class="w-full lg:w-[800px] pt-[30px] pb-[53px] px-[20px] lg:px-[227px] rounded-[50px] bg-pale-cream flex flex-col items-center"
   >
     <Title
       color="secondary"
-      class="w-[100px] h-[132px] text-[200px] italic tracking-[4px] rotate-180"
+      class="w-full ml-[40px] lg:w-[100px] h-[132px] text-[200px] italic tracking-[4px] rotate-180"
     >
       “
     </Title>
     <Title
       color="secondary"
-      class="w-[360px] text-[25px] italic tracking-[0.5px] text-center"
+      class="lg:w-[360px] text-[25px] italic tracking-[0.5px] text-center"
     >
       The details are not the details. They make the design.
     </Title>
