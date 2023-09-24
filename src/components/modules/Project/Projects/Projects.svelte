@@ -50,9 +50,9 @@
   ];
 </script>
 
-<div class="container my-[200px] flex flex-col items-center">
+<div class="container my-[50px] lg:my-[200px] flex flex-col items-center">
   <Categories />
-  <div class="my-[61px] max-h-[3250px] flex flex-col flex-wrap gap-[35px]">
+  <div class="my-[61px] lg:max-h-[3250px] flex flex-col items-center lg:flex-wrap gap-[35px]">
     {#each projects as project}
       <ProjectItem {...project} />
     {/each}

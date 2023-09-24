@@ -8,11 +8,13 @@
   const textareaName = "Sent Your Message";
 </script>
 
-<div class="container p-[200px] flex flex-col items-center">
-  <Title class="text-[50px] leading-[150%] tracking-[0.5px]">Contact Me</Title>
-  <div
-    class="flex flex-wrap items-center justify-between gap-y-[50px] my-7"
+<div
+  class="container py-[50px] lg:py-[200px] lg:px-[200px] flex flex-col items-center"
+>
+  <Title class="text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
+    >Contact Me</Title
   >
+  <div class="flex flex-wrap items-center justify-between gap-y-[50px] my-7">
     {#each inputs as input}
       <Input name={input} />
     {/each}
@@ -24,7 +26,7 @@
   <div class="flex items-center gap-2.5 relative">
     <input
       type="checkbox"
-      class="relative appearance-none w-4 h-4 border-[2px] border-primary rounded-sm before:ring-primary focus:outline-none checked:bg-primary hover:ring-1 hover:ring-primary"
+      class="relative appearance-none w-8 lg:w-4 h-4 border-[2px] border-primary rounded-sm before:ring-primary focus:outline-none checked:bg-primary hover:ring-1 hover:ring-primary"
     />
     <Text color="tertiary"
       >Save my name, email, and website in this browser for the next time I

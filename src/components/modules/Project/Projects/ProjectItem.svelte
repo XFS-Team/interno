@@ -7,7 +7,7 @@
   export let description: string;
 </script>
 
-<div class="flex flex-col w-[48%]">
+<div class="flex flex-col lg:w-[48%]">
   <img src={image} alt="projectImage" />
   <div class="mt-[28px] flex items-center justify-between">
     <div>

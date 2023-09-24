@@ -5,7 +5,7 @@
     image: "/images/Team/Banner/banner.png",
     title: "Our Professional",
     pageName: "Home / Team",
-    class: "py-[41px] px-[68px]",
+    class: "py-[41px] lg:px-[68px]",
   };
 </script>
 

@@ -3,7 +3,7 @@
   import Form from "../Form/Form.svelte";
 </script>
 
-<div class="max-w-[800px]">
+<div class="w-full lg:w-[800px]">
   <Content />
   <Form />
 </div>

@@ -3,8 +3,11 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div class="container mt-[200px] flex gap-[97px]">
-  <Title class="max-w-[448px] text-[50px]"
+<div
+  class="container mt-[50px] lg:mt-[200px] flex flex-col lg:flex-row items-center lg:items-start gap-[30px] lg:gap-[97px]"
+>
+  <Title
+    class="lg:max-w-[448px] lg:text-[50px] text-[35px] text-center lg:text-left"
     >We set the trends of modern living Services.</Title
   >
   <div class="max-w-[655px]">

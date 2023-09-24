@@ -19,7 +19,7 @@
       title: "Idea for Work",
       content:
         "It is a long established fact will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.",
-      class: "flex-row-reverse",
+      class: "lg:flex-row-reverse",
     },
     {
       image: "/images/Services/Work/work_3.png",
@@ -36,23 +36,25 @@
       title: "Perfection",
       content:
         "It is a long established fact will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.",
-      class: "flex-row-reverse",
+      class: "lg:flex-row-reverse",
     },
   ];
 </script>
 
-<div class="container rounded-[70px] bg-pale-cream py-40 px-[116px]">
-  <div class="flex flex-col justify-between items-center mb-[100px]">
-    <Title class="text-[50px] text-center">How We Work</Title>
-    <Text class="max-w-[802px] mt-2 text-center"
-      >It is a long established fact will be distracted.Lorem Ipsum is simply
-      dummy text of the printing and typesetting industry.</Text
-    >
-  </div>
+<div class="container">
+  <div class="rounded-[70px] bg-pale-cream py-40 px-[20px] lg:px-[116px]">
+    <div class="flex flex-col justify-between items-center mb-[100px]">
+      <Title class="text-[50px] text-center">How We Work</Title>
+      <Text class="lg:max-w-[802px] mt-2 text-center"
+        >It is a long established fact will be distracted.Lorem Ipsum is simply
+        dummy text of the printing and typesetting industry.</Text
+      >
+    </div>
 
-  <div class="flex flex-col gap-[70px]">
-    {#each works as work}
-      <WorkItem {...work} />
-    {/each}
+    <div class="flex flex-col gap-[70px]">
+      {#each works as work}
+        <WorkItem {...work} />
+      {/each}
+    </div>
   </div>
 </div>

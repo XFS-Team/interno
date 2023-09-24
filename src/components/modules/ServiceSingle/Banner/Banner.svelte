@@ -5,7 +5,7 @@
     image: "/images/Services/Banner/banner.png",
     title: "Service Single",
     pageName: "Home / Service Single",
-    class: "py-[41px] px-[96px]"
+    class: "py-[41px] lg:px-[96px]"
   };
 </script>
 

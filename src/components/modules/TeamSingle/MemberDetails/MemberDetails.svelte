@@ -18,14 +18,17 @@
   };
 </script>
 
-<div class="flex flex-row items-center gap-[59px]">
+<div class="flex flex-col lg:flex-row items-center gap-[59px]">
   <img src={memberDetail.image} alt="memberImage" />
-  <div>
-    <Title class="text-[50px] leading-[150%] tracking-[0.5px]"
+  <div class="flex flex-col items-center lg:items-start">
+    <Title
+      class="text-center lg:text-left text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
       >{memberDetail.name}</Title
     >
-    <Text class="mb-[30px]">{memberDetail.position}</Text>
-    <Text>{memberDetail.description}</Text>
+    <Text class="text-center lg:text-left mb-[30px]"
+      >{memberDetail.position}</Text
+    >
+    <Text class="text-center lg:text-left ">{memberDetail.description}</Text>
 
     <div class="flex flex-col items-start gap-y-[30px] mt-8">
       <div class="flex items-center">
@@ -48,7 +51,7 @@
       </div>
     </div>
 
-    <div class="flex items-center gap-[35px] mt-[47px]">
+    <div class="flex flex-wrap items-center gap-[35px] mt-[47px]">
       {#each memberDetail.socials as social}
         <img
           class="h-[21px]"

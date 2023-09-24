@@ -5,7 +5,7 @@
     image: "/images/FAQ/Banner/banner.png",
     title: "Faq’s",
     pageName: "Home / Faq’s",
-    class: "py-[41px] px-[180px]",
+    class: "py-[41px] lg:px-[180px]",
   };
 </script>
 

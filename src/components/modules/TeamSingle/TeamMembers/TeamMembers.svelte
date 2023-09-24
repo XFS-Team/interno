@@ -11,26 +11,30 @@
   };
 </script>
 
-<div class="bg-pale-cream py-[198px]">
+<div class="bg-pale-cream py-[50px] lg:py-[198px]">
   <div class="container flex flex-col items-center">
-    <Title class="text-[50px] leading-[150%] tracking-[0.5px] mb-16"
+    <Title
+      class="text-center text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px] mb-4 lg:mb-16"
       >Our Team Members</Title
     >
-    <div class="flex items-center justify-between gap-[22px]">
+    <div
+      class="flex flex-wrap items-center justify-center xl:justify-between gap-[22px]"
+    >
       <img src="/images/TeamSingle/Members/member_1.png" alt="memberImg" />
       <img src="/images/TeamSingle/Members/member_2.png" alt="memberImg" />
       <div
-        class="flex flex-col gap-y-[66px] bg-white w-[285px] h-[433px] rounded-[36px] items-center justify-center"
+        class="flex flex-col gap-y-[66px] bg-white py-[81px] px-[53px] rounded-[36px] items-center justify-center"
       >
         <div class="flex flex-col items-center">
-          <Title class="text-[25px] leading-[150%] tracking-[0.25px] "
+          <Title
+            class="text-center text-[25px] leading-[150%] tracking-[0.25px]"
             >{memberDetail.name}</Title
           >
-          <Text class="text-lg leading-[150%] tracking-[0.18px]"
+          <Text class="text-center text-lg leading-[150%] tracking-[0.18px]"
             >{memberDetail.position}</Text
           >
         </div>
-        <div class="flex items-center gap-[36px]">
+        <div class="flex flex-wrap items-center justify-center gap-[36px]">
           {#each memberDetail.socials as social}
             <img
               class="h-[21px]"
@@ -40,10 +44,10 @@
           {/each}
         </div>
         <div class="flex flex-col items-center">
-          <Text class="text-lg leading-[150%] tracking-[0.18px]"
+          <Text class="text-center text-lg leading-[150%] tracking-[0.18px]"
             >{memberDetail.phone}</Text
           >
-          <Text class="text-lg leading-[150%] tracking-[0.18px]"
+          <Text class="text-center text-lg leading-[150%] tracking-[0.18px]"
             >{memberDetail.mail}</Text
           >
         </div>

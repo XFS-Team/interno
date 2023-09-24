@@ -59,7 +59,9 @@
   ];
 </script>
 
-<div class="container my-[150px] flex justify-center gap-12">
+<div
+  class="container my-[50px] lg:my-[150px] flex flex-col lg:flex-row justify-center gap-12"
+>
   {#each prices as price}
     <PriceItem {...price} />
   {/each}

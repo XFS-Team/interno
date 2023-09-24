@@ -16,10 +16,12 @@
     { number: 4, content: "Renovations Benefit of Service" },
     { number: 5, content: "We are confident about our projects." },
   ];
-</script> 
+</script>
 
-<div class="container flex justify-between items-center my-[150px] px-[82px] gap-[83px]">
+<div
+  class="container flex flex-col lg:flex-row justify-between items-center my-[100px] lg:my-[150px] lg:px-[82px] gap-[83px]"
+>
   <PointItem title={title1} {contentItems} />
-  <div class="w-px h-[249px] bg-[#CECECE]" />
+  <div class="hidden lg:block w-px h-[249px] bg-[#CECECE]" />
   <PointItem title={title2} {contentItems} />
 </div>

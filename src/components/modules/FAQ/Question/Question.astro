@@ -17,10 +17,9 @@ const { title, content }: Props = Astro.props as Props;
 </style>
 
 <script lang="ts">
-  const buttonStates = {};
-
   document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".btn");
+    const buttonStates = {};
+    const buttons = document.querySelectorAll(".btn-question");
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -66,16 +65,16 @@ const { title, content }: Props = Astro.props as Props;
   });
 </script>
 
-<div class="flex flex-col w-[585px] mb-[20px]">
+<div class="flex flex-col w-full lg:w-[585px] mb-[20px]">
   <button
-    class="flex items-center justify-between w-[585px] btn pb-8 border-b-[1px] border-primary mb-[13px]"
+    class="flex items-center justify-between w-full lg:w-[585px] btn-question pb-8 border-b-[1px] border-primary mb-[13px]"
   >
-    <Title class="title text-[25px] leading-[150%] tracking-[0.25px]">
+    <Title class="title text-left text-xl lg:text-[25px] leading-[150%] tracking-[0.25px]">
       {title}
     </Title>
     <img class="mr-[22px]" src="/images/FAQ/Icons/arrow_up.svg" alt="" />
   </button>
-  <div class="content w-[585px] isHidden mb-9">
-    <Text>{content}</Text>
+  <div class="content lg:w-[585px] isHidden mb-9">
+    <Text class="text-xl lg:text-[22px]">{content}</Text>
   </div>
 </div>

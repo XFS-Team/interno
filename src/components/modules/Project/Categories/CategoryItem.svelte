@@ -6,6 +6,8 @@
   export let textColor: string;
 </script>
 
-<div class="py-[26px] px-[66px] {bgColor} rounded-[18px]">
-  <Text intent="secondary" class={textColor}>{name}</Text>
+<div
+  class="w-full lg:w-[220px] py-[26px] px-[66px] flex justify-center {bgColor} rounded-[18px]"
+>
+  <Text intent="secondary" class="text-center {textColor}">{name}</Text>
 </div>

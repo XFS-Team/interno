@@ -31,9 +31,13 @@
     <Text intent="secondary" color="secondary">{plan}</Text>
   </div>
 
-  <div class="my-7 mx-[45px] text-center mt-[30px] w-[279px]">
+  <div
+    class="my-7 mx-[45px] flex flex-col gap-y-[20px] lg:gap-y-0 text-center mt-[30px] lg:w-[279px]"
+  >
     {#each offerItems as offerItem}
-      <Text class="text-xl leading-[250%] tracking-[0.2px]">{offerItem}</Text>
+      <Text class="text-xl leading-[125%] lg:leading-[250%] tracking-[0.2px]"
+        >{offerItem}</Text
+      >
     {/each}
   </div>
 

@@ -5,7 +5,7 @@
     image: "/images/License/Banner/banner.png",
     title: "Licenses",
     pageName: "Home / Licenses",
-    class: "py-[41px] px-[157px]",
+    class: "py-[41px] lg:px-[157px]",
   };
 </script>
 

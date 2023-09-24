@@ -47,8 +47,8 @@
   ];
 </script>
 
-<div>
-  <div class="container">
+<div class="border-t-[1px]">
+  <div class="container pt-[20px]">
     <div
       class="flex flex-col lg:flex-row lg:gap-[101px] items-center justify-center lg:items-start lg:justify-between"
     >
@@ -56,7 +56,7 @@
         class="flex flex-col items-center justify-center lg:items-start lg:justify-between"
       >
         <Logo />
-        <Text class="mt-[18px] max-w-[393px]">
+        <Text class="text-center lg:text-left mt-[18px] max-w-[393px]">
           It is a long established fact that a reader will be distracted
           lookings.
         </Text>
@@ -86,7 +86,7 @@
           {#each pages as page}
             <li class="leading-[66px] text-slate">
               <a href={page.url}>
-                <Text class="leading-[300%] tracking-[0.22px]"
+                <Text class="text-center leading-[300%] tracking-[0.22px]"
                   >{page.label}</Text
                 >
               </a>
@@ -102,7 +102,7 @@
           {#each services as service}
             <li class="leading-[66px] text-slate">
               <a href={service.url}>
-                <Text class="leading-[300%] tracking-[0.22px]"
+                <Text class="text-center leading-[300%] tracking-[0.22px]"
                   >{service.label}
                 </Text>
               </a>
@@ -117,7 +117,7 @@
           </li>
           {#each contacts as contact}
             <li class="mb-[33px]">
-              <Text class="tracking-[0.22px]">{contact.info}</Text>
+              <Text class="text-center tracking-[0.22px]">{contact.info}</Text>
             </li>
           {/each}
         </ul>

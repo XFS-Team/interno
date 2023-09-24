@@ -4,13 +4,16 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div class="container flex justify-between items-center gap-[82px]">
+<div
+  class="container flex flex-col lg:flex-row justify-between items-center gap-[82px]"
+>
   <img src="/images/ServiceSingle/Result/result.png" alt="result" />
-  <div>
-    <Title class="text-[50px] tracking-[1px]"
-      >We love design.That's how we got here.</Title
+  <div class="flex flex-col items-center lg:items-start">
+    <Title
+      class="text-center lg:text-left text-[35px] lg:text-[50px] tracking-[1px]"
+      >We love design. That's how we got here.</Title
     >
-    <Text class="mt-[11px]"
+    <Text class="text-center lg:text-left mt-[11px]"
       >It is a long established fact that a reader will be distracted by the of
       readable content .</Text
     >

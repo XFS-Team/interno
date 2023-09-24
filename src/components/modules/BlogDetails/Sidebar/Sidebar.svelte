@@ -5,7 +5,7 @@
   import Tag from "../Tag/Tag.svelte";
 </script>
 
-<div class="flex flex-col w-[345px] gap-y-[50px]">
+<div class="flex flex-col items-center lg:w-[345px] gap-y-[50px]">
   <Search />
   <LatestNews />
   <Categories />

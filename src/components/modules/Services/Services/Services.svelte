@@ -13,9 +13,9 @@
 </script>
 
 <div class="container">
-  <div class="mb-[200px]">
+  <div class="mb-[50px] lg:mb-[200px]">
     <Work />
-    <div class="flex mt-[88px]">
+    <div class="flex flex-col lg:flex-row items-center mt-[88px]">
       {#each titles as title}
         <WorkItem {...title} />
       {/each}

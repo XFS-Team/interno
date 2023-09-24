@@ -1,4 +1,4 @@
-<script lang="ts" >
+<script lang="ts">
   import Title from "../../../common/Title/Title.svelte";
   import ContentItem from "./ContentItem.svelte";
 
@@ -11,8 +11,10 @@
   export let contentItems: ContentItemType[];
 </script>
 
-<div class="max-w-[435px]">
-  <Title class="text-[50px] mb-[23px]">{title}</Title>
+<div class="lg:max-w-[435px]">
+  <Title class="text-center lg:text-left text-[35px] lg:text-[50px] mb-[23px]"
+    >{title}</Title
+  >
   {#each contentItems as contentItem}
     <ContentItem {...contentItem} />
   {/each}
