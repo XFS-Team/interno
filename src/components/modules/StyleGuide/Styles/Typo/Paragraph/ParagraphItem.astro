@@ -11,6 +11,6 @@ const { title, content }: Props = Astro.props as Props;
 ---
 
 <div class="lg:w-[660px] flex flex-col items-center lg:items-start gap-y-5">
-  <Title class="text-xl text-center leading-[125%]">{title}</Title>
-  <Text>{content}</Text>
+  <Title class="text-xl text-center lg:text-left leading-[125%]">{title}</Title>
+  <Text class="text-center lg:text-left">{content}</Text>
 </div>

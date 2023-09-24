@@ -3,7 +3,7 @@ import Questions from "../Question/Questions.astro";
 
 type QuestionsData = {
   titleHeader: string;
-  questionsData: { title: string; content: string; }[];
+  questionsData: { title: string; content: string }[];
   image: string;
   reverse: string;
 };
@@ -71,13 +71,13 @@ const questionsData: QuestionsData[] = [
       },
     ],
     image: "/images/FAQ/Question/question_2.png",
-    reverse: "flex-row-reverse",
+    reverse: "lg:flex-row-reverse",
   },
 ];
 ---
 
 <div
-  class="container flex flex-col items-center justify-between gap-[150px] my-[200px]"
+  class="container flex flex-col items-center justify-between gap-y-[50px] lg:gap-[150px] my-[50px] lg:my-[200px]"
 >
   {
     questionsData.map(({ titleHeader, image, questionsData, reverse }) => (

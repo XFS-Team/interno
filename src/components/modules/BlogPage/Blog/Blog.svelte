@@ -3,7 +3,7 @@
   import News from "../News/News.svelte";
 </script>
 
-<div class="container my-[200px]">
+<div class="container my-[50px] lg:my-[200px]">
   <LatestPost />
   <News />
 </div>

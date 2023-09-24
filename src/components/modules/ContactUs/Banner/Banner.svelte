@@ -5,7 +5,7 @@
     image: "/images/ContactUs/Banner/banner.png",
     title: "Contact Us",
     pageName: "Home / Contact",
-    class: "py-[41px] px-[130px]",
+    class: "py-[41px] lg:px-[130px]",
   };
 </script>
 

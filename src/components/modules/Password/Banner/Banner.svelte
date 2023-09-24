@@ -5,7 +5,7 @@
     image: "/images/Password/Banner/banner.png",
     title: "Restricted Page",
     pageName: "Home / Restricted Page",
-    class: "py-[41px] px-[75px]",
+    class: "py-[41px] lg:px-[75px]",
   };
 </script>
 

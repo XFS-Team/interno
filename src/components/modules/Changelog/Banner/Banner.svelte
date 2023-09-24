@@ -5,7 +5,7 @@
     image: "/images/Changelog/Banner/banner.png",
     title: "Changelog",
     pageName: "Home / Changelog",
-    class: "py-[41px] px-[136px]",
+    class: "py-[41px] lg:px-[136px]",
   };
 </script>
 

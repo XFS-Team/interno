@@ -5,7 +5,7 @@
     image: "/images/AboutUs/Banner/banner.png",
     title: "About Us",
     pageName: "Home / About Us",
-    class: "py-[41px] px-[120px]",
+    class: "py-[41px] lg:px-[120px]",
   };
 </script>
 

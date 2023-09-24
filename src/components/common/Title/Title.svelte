@@ -6,7 +6,7 @@
     variants: {
       intent: {
         default:
-          "text-center lg:text-left font-normal font-serif leading-[125%]",
+          "font-normal font-serif leading-[125%]",
       },
       color: {
         default: "text-dark-gray",

@@ -5,7 +5,7 @@
     image: "/images/BlogPage/Banner/banner.png",
     title: "Articles & News",
     pageName: "Home / Blog",
-    class: "py-[41px] px-[78px]"
+    class: "py-[41px] lg:px-[78px]"
   };
 </script>
 

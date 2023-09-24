@@ -5,9 +5,8 @@
     image: "/images/TeamSingle/Banner/banner.png",
     title: "Professional Single",
     pageName: "Home / Team Single",
-    class: "py-[41px] px-[65px]",
+    class: "py-[41px] lg:px-[65px]",
   };
 </script>
 
 <Banner {...banner} />
- 

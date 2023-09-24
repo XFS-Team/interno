@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       container: {
-        padding: "20px",
+        padding: "16px",
         center: true,
         screens: {
           sm: "640px",
           md: "768px",
           lg: "1024px",
-          xl: "1240px", // Set the max-width for the xl breakpoint to 1200px
+          xl: "1248px", // Set the max-width for the xl breakpoint to 1200px
         },
       },
       fontFamily: {

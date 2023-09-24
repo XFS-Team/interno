@@ -53,8 +53,10 @@
   ];
 </script>
 
-<div class="container flex flex-wrap gap-x-[22px] gap-y-12 my-[200px]">
+<div
+  class="container flex flex-wrap justify-center gap-x-[22px] gap-y-12 my-[50px] lg:my-[200px]"
+>
   {#each teamMembers as teamMember}
     <TeamMember {...teamMember} />
-  {/each} 
+  {/each}
 </div>

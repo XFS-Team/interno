@@ -5,9 +5,9 @@
     variants: {
       intent: {
         default:
-          "text-center lg:text-left text-[22px] font-normal font-sans leading-[150%] tracking-[0.22px]",
+          "text-[22px] font-normal font-sans leading-[150%] tracking-[0.22px]",
         secondary:
-          "text-center lg:text-left text-lg font-semibold font-sans leading-[125%] tracking-[0.36px]",
+          "text-lg font-semibold font-sans leading-[125%] tracking-[0.36px]",
       },
       color: {
         default: "text-slate",

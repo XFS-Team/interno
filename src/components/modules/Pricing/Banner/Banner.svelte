@@ -5,7 +5,7 @@
     image: "/images/Pricing/Banner/banner.png",
     title: "Pricing & Plan",
     pageName: "Home / Pricing",
-    class: "py-[41px] px-[95px]",
+    class: "py-[41px] lg:px-[95px]",
   };
 </script>
 

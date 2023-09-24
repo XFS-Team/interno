@@ -8,5 +8,5 @@
 
 <div class="flex items-start justify-between gap-3.5">
   <Title class="text-xl" color="secondary">{number}</Title>
-  <Text>{content}</Text>
+  <Text class="text-center lg:text-left">{content}</Text>
 </div>

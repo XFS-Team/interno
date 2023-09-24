@@ -26,7 +26,7 @@
 </script>
 
 <div
-  class="max-w-[900px] rounded-[18px] border-[1px] border-solid border-primary flex items-center justify-center mx-auto"
+  class="w-full lg:w-[900px] lg:h-[75px] rounded-[18px] border-[1px] border-solid border-primary flex flex-col lg:flex-row items-center justify-center mx-auto"
 >
   {#each categories as category}
     <CategoryItem {...category} />

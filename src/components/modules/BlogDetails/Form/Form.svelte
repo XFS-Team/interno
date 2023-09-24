@@ -21,10 +21,11 @@
       placeholder={textareaName}
     />
   </div>
+
   <div class="flex items-center gap-2.5 relative">
     <input
       type="checkbox"
-      class="relative appearance-none w-4 h-4 border-[2px] border-primary rounded-sm before:ring-primary focus:outline-none checked:bg-primary hover:ring-1 hover:ring-primary"
+      class="relative appearance-none w-8 lg:w-4 h-4 border-[2px] border-primary rounded-sm before:ring-primary focus:outline-none checked:bg-primary hover:ring-1 hover:ring-primary"
     />
     <Text color="tertiary"
       >Save my name, email, and website in this browser for the next time I

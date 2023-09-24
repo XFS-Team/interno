@@ -24,11 +24,11 @@
       content: "Best For Any Office & Business Interior Solution",
       date: "25 December,2022",
       colorArrow: "default",
-    }, 
+    },
   ];
 
   const blogs2 = [
-        {
+    {
       image: "/images/Blog/blog_4.png",
       tag: "Kitchan Design",
       content: "Let’s Get Solution For Building Construction Work",
@@ -48,19 +48,26 @@
       content: "Best For Any Office & Business Interior Solution",
       date: "25 December,2022",
       colorArrow: "default",
-    }, 
-  ]
+    },
+  ];
 </script>
 
-<div class="container mt-[150px]">
-  <Title class="text-[50px] tracking-[1px]">Articles & News</Title>
-  <div class="mt-[30px] flex justify-between items-center gap-[28px]">
+<div class="container mt-[100px] lg:mt-[150px]">
+  <Title
+    class="text-[35px] lg:text-[50px] text-center lg:text-left tracking-[1px]"
+    >Articles & News</Title
+  >
+  <div
+    class="mt-[30px] flex flex-col lg:flex-row justify-between items-center gap-[28px]"
+  >
     {#each blogs as blog}
       <BlogItem {...blog} />
     {/each}
   </div>
 
-  <div class="mt-[30px] flex justify-between items-center gap-[28px]">
+  <div
+    class="mt-[30px] flex flex-col lg:flex-row justify-between items-center gap-[28px]"
+  >
     {#each blogs2 as blog}
       <BlogItem {...blog} />
     {/each}

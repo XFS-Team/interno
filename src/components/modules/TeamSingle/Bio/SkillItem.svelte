@@ -5,12 +5,12 @@
   export let percent: string;
 </script>
 
-<div class="flex flex-col">
+<div class="w-full flex flex-col">
   <div class="flex items-center justify-between mb-2">
     <Text class="font-medium">{nameSkill}</Text>
     <Text class="text-[15px] leading-[150%] tracking-[0.15px]">{percent}</Text>
   </div>
-  <div class="w-[533px] bg-gray-200 rounded-full h-[5px] dark:bg-pale-cream">
+  <div class="lg:w-[533px] bg-gray-200 rounded-full h-[5px] dark:bg-pale-cream">
     <div
       class="bg-primary h-[5px] rounded-full relative"
       style="width: {percent}"
