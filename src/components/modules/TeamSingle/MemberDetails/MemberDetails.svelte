@@ -18,11 +18,15 @@
   };
 </script>
 
-<div class="flex flex-col lg:flex-row items-center gap-[59px]">
+<div
+  data-aos="fade-down"
+  data-aos-duration="500"
+  class="flex flex-col lg:flex-row items-center gap-[59px]"
+>
   <img src={memberDetail.image} alt="memberImage" />
   <div class="flex flex-col items-center lg:items-start">
     <Title
-      class="text-center lg:text-left text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
+      class="text-center lg:text-left text-[25px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
       >{memberDetail.name}</Title
     >
     <Text class="text-center lg:text-left mb-[30px]"

@@ -26,6 +26,8 @@
 </script>
 
 <div
+  data-aos="fade-up"
+  data-aos-duration="500"
   class="w-full lg:w-[900px] lg:h-[75px] rounded-[18px] border-[1px] border-solid border-primary flex flex-col lg:flex-row items-center justify-center mx-auto"
 >
   {#each categories as category}

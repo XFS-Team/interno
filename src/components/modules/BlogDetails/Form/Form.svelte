@@ -8,7 +8,8 @@
   const textareaName = "Hello Iam Intrested in..";
 </script>
 
-<div class="mt-[93px]">
+<div data-aos="fade-right"
+  data-aos-duration="500" class="mt-[93px]">
   <Title class="text-[25px] tracking-[0.5px]">Leave a Reply</Title>
   <div
     class="flex flex-wrap items-center justify-between gap-y-[50px] my-[36px]"

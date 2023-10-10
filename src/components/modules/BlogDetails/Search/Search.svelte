@@ -1,7 +1,11 @@
 <script lang="ts">
 </script>
 
-<div class="relative flex items-center w-full">
+<div
+  data-aos="fade-left"
+  data-aos-duration="500"
+  class="relative flex items-center w-full"
+>
   <input
     type="text"
     placeholder="Search"

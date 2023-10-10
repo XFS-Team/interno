@@ -10,13 +10,13 @@
   ];
 </script>
 
-<div class="mt-[100px]">
+<div data-aos="fade-right" data-aos-duration="500" class="mt-[100px]">
   <div class="mb-[45px]">
     <Title
-      class="text-center lg:text-left text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px] mb-[18px]"
+      class="text-center lg:text-left text-[25px] lg:text-[50px] leading-[150%] tracking-[0.5px] mb-[18px]"
       >Short Biography​</Title
     >
-    <Text class="text-center lg:text-leftmb-8"
+    <Text class="text-center lg:text-left mb-8"
       >Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
       turpmaximus.posuere in.Contrary to popular belief.There are many
       variations of passages of Lorem Ipsum available, but the majority have

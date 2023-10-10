@@ -41,7 +41,11 @@
   ];
 </script>
 
-<div class="container">
+<div
+  data-aos="fade-up"
+  data-aos-duration="500"
+  class="container"
+>
   <div class="rounded-[70px] bg-pale-cream py-40 px-[20px] lg:px-[116px]">
     <div class="flex flex-col justify-between items-center mb-[100px]">
       <Title class="text-[50px] text-center">How We Work</Title>

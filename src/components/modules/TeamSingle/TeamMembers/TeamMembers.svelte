@@ -11,10 +11,14 @@
   };
 </script>
 
-<div class="bg-pale-cream py-[50px] lg:py-[198px]">
+<div
+  data-aos="fade-up"
+  data-aos-duration="500"
+  class="bg-pale-cream py-[50px] lg:py-[198px]"
+>
   <div class="container flex flex-col items-center">
     <Title
-      class="text-center text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px] mb-4 lg:mb-16"
+      class="text-center text-[25px] lg:text-[50px] leading-[150%] tracking-[0.5px] mb-4 lg:mb-16"
       >Our Team Members</Title
     >
     <div

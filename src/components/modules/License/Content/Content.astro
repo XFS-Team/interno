@@ -11,9 +11,11 @@ const { title, content, images }: Props = Astro.props as Props;
 ---
 
 <div
+  data-aos="fade-right"
+  data-aos-duration="1000"
   class="flex flex-col items-start py-[68px] px-[47px] bg-pale-cream rounded-[70px]"
 >
-  <Title class="text-[35px] leading-[150%] tracking-[0.35px]">{title}</Title>
+  <Title class="text-[2 5px] leading-[150%] tracking-[0.35px]">{title}</Title>
   <Text class="lg:w-[906px] mt-[25px] mb-[54px]">{content}</Text>
   <div class="w-full flex flex-wrap gap-y-[20px] items-center justify-between">
     {images.map((img) => <img src={img} alt="" />)}

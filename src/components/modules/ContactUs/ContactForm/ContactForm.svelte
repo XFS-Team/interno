@@ -19,10 +19,12 @@
 </script>
 
 <div
+  data-aos="fade-up"
+  data-aos-duration="1000"
   class="container flex flex-col items-center justify-center mt-[50px] lg:mt-[200px]"
 >
   <Title
-    class="lg:w-[683px] text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px] text-center"
+    class="lg:w-[683px] text-[25px] lg:text-[50px] leading-[150%] tracking-[0.5px] text-center"
     >We love meeting new people and helping them.</Title
   >
   <div

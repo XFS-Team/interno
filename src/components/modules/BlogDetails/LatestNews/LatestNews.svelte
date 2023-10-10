@@ -10,7 +10,8 @@
   ];
 </script>
 
-<div class="flex flex-col items-start w-full">
+<div data-aos="fade-left"
+  data-aos-duration="500" class="flex flex-col items-start w-full">
   <Title class="text-[25px] tracking-[0.5px] mb-[33px]">{title}</Title>
   <div class="flex flex-col w-full gap-y-[34px]">
     {#each newsList as news}

@@ -39,57 +39,69 @@
   ];
 </script>
 
-<Title
-  class="text-[35px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-[21px]"
-  >Let’s Get Solution for Building Construction Work</Title
->
-<img src="/images/BlogDetails/Content/content_1.png" alt="content" />
-<div class="flex flex-col lg:flex-row items-center justify-between mt-[46px]">
-  <Text class="text-center lg:text-left">26 December,2022</Text>
-  <Text class="text-center lg:text-left">Interior / Design / Home / Decore</Text
+<div data-aos="fade-right" data-aos-duration="500">
+  <Title
+    class="text-[25px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-[21px]"
+    >Let’s Get Solution for Building Construction Work</Title
+  >
+  <img src="/images/BlogDetails/Content/content_1.png" alt="content" />
+  <div class="flex flex-col lg:flex-row items-center justify-between mt-[46px]">
+    <Text class="text-center lg:text-left">26 December,2022</Text>
+    <Text class="text-center lg:text-left"
+      >Interior / Design / Home / Decore</Text
+    >
+  </div>
+</div>
+<div data-aos="fade-right" data-aos-duration="500">
+  <Text class="text-center lg:text-left mt-12">
+    Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+    turpmaximus.posuere in.Contrary to popular belief.There are many variations
+    of passages of Lorem Ipsum available, but the majority have suffered
+    alteration in some form, by injecthumour, or randomised words which don't
+    look even slightly believable.
+  </Text>
+  <Text class="text-center lg:text-left mt-8"
+    >Embarrassing hidden in the middle of text. All the Lorem Ipsum generators
+    on the Internet tend to repeat predefined chunks as necessary.</Text
   >
 </div>
-<Text class="text-center lg:text-left mt-12">
-  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-  turpmaximus.posuere in.Contrary to popular belief.There are many variations of
-  passages of Lorem Ipsum available, but the majority have suffered alteration
-  in some form, by injecthumour, or randomised words which don't look even
-  slightly believable.
-</Text>
-<Text class="text-center lg:text-left mt-8"
-  >Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
-  the Internet tend to repeat predefined chunks as necessary.</Text
->
 
 <Quotes class="mt-[35px] mb-[27px]" />
 
-<Title
-  class="text-[35px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-5"
-  >Design sprints are great</Title
->
-<Text class="mb-6 text-center lg:text-left">
-  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-  turpmaximus.posuere in.Contrary to popular belief.There are many variations of
-  passages of Lorem Ipsum available, but the majority have suffered.
-</Text>
+<div data-aos="fade-right" data-aos-duration="500">
+  <Title
+    class="text-[25px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-5"
+    >Design sprints are great</Title
+  >
+
+  <Text class="mb-6 text-center lg:text-left">
+    Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+    turpmaximus.posuere in.Contrary to popular belief.There are many variations
+    of passages of Lorem Ipsum available, but the majority have suffered.
+  </Text>
+</div>
 
 <Points />
 
-<img
-  class="mt-11 mb-[35px]"
-  src="/images/BlogDetails/Content/content_2.png"
-  alt="content"
-/>
+<div data-aos="fade-right" data-aos-duration="500">
+  <img
+    class="mt-11 mb-[35px]"
+    src="/images/BlogDetails/Content/content_2.png"
+    alt="content"
+  />
 
-<Text class="text-center lg:text-left">
-  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-  turpmaximus.posuere in.Contrary to popular belief.There are many variations of
-  passages of Lorem Ipsum available, but the majority have suffered.
-</Text>
+  <Text class="text-center lg:text-left">
+    Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+    turpmaximus.posuere in.Contrary to popular belief.There are many variations
+    of passages of Lorem Ipsum available, but the majority have suffered.
+  </Text>
+</div>
 
 <!-- <div class="w-[800px] h-px bg- " /> -->
 
 <div
+  data-aos="fade-right"
+  data-aos-duration="500"
   class="flex flex-wrap items-center gap-y-[30px] justify-center md:justify-between border-b-[1px] border-t-[1px] py-11 border-[#E5E5E5] mt-[62px]"
 >
   <div

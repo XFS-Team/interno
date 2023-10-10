@@ -18,7 +18,8 @@
   ];
 </script>
 
-<div
+<div data-aos="fade-left"
+  data-aos-duration="500"
   class="container flex flex-col lg:flex-row justify-between items-center my-[100px] lg:my-[150px] lg:px-[82px] gap-[83px]"
 >
   <PointItem title={title1} {contentItems} />

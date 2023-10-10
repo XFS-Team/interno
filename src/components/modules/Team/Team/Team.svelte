@@ -54,6 +54,8 @@
 </script>
 
 <div
+  data-aos="fade-up"
+  data-aos-duration="500"
   class="container flex flex-wrap justify-center gap-x-[22px] gap-y-12 my-[50px] lg:my-[200px]"
 >
   {#each teamMembers as teamMember}
