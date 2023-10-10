@@ -38,7 +38,7 @@
   ];
 </script>
 
-<div>
+<div data-aos="fade-left" data-aos-duration="500">
   <Title class="text-[25px] tracking-[0.5px] mb-6">{title}</Title>
   <div class="flex flex-wrap gap-x-2.5 gap-y-[11px]">
     {#each tags as tag}

@@ -2,7 +2,8 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div
+<div data-aos="fade-right"
+  data-aos-duration="500"
   {...$$props}
   class="pt-[30px] pb-[53px] px-[20px] lg:px-[227px] rounded-[50px] bg-pale-cream flex flex-col items-center {$$props.class}"
 >

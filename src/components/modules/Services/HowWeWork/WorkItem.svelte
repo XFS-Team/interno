@@ -20,7 +20,7 @@
       <Title class="text-[100px] lg:text-[120px] text-white">{number}</Title>
     </div>
     <div class="mt-[20px] lg:mt-[55px]">
-      <Title class="text-center lg:text-left text-[35px]">{title}</Title>
+      <Title class="text-center lg:text-left text-[25px]">{title}</Title>
       <Text class="text-center lg:text-left">{content}</Text>
     </div>
   </div>

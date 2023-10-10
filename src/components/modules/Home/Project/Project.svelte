@@ -27,9 +27,13 @@
   ];
 </script>
 
-<div class="container">
+<div
+  data-aos="fade-right"
+  data-aos-duration="500"
+  class="container"
+>
   <div class="flex flex-col justify-between items-center">
-    <Title class="text-[35px] lg:text-[50px] text-center tracking-[1px]"
+    <Title class="text-[25px] lg:text-[50px] text-center tracking-[1px]"
       >Follow Our Projects</Title
     >
     <Text class="max-w-[737px] mt-2 text-center">
@@ -38,7 +42,9 @@
     </Text>
   </div>
 
-  <div class="mt-[93px] flex flex-col items-center gap-y-[20px] lg:grid lg:grid-cols-2 lg:gap-x-[104px] lg:gap-y-[56px]">
+  <div
+    class="mt-[93px] flex flex-col items-center gap-y-[20px] lg:grid lg:grid-cols-2 lg:gap-x-[104px] lg:gap-y-[56px]"
+  >
     {#each projects as project}
       <ProjectItem {...project} />
     {/each}

@@ -5,7 +5,8 @@
   const title = "Categories";
 </script>
 
-<div
+<div data-aos="fade-left"
+  data-aos-duration="500"
   class="w-full py-[27px] px-8 rounded-[20px] bg-pale-cream flex flex-col items-start"
 >
   <Title class="text-[25px] tracking-[0.5px] mb-[10px]">{title}</Title>

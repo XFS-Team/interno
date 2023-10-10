@@ -60,6 +60,8 @@
 </script>
 
 <div
+  data-aos="fade-down"
+  data-aos-duration="500"
   class="container my-[50px] lg:my-[150px] flex flex-col lg:flex-row justify-center gap-12"
 >
   {#each prices as price}

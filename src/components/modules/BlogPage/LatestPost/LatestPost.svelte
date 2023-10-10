@@ -3,9 +3,9 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div>
+<div data-aos="fade-left" data-aos-duration="500">
   <Title
-    class="text-[35px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-[27px]"
+    class="text-[25px] lg:text-[50px] text-center lg:text-left tracking-[1px] mb-[27px]"
     >Latest Post</Title
   >
   <div

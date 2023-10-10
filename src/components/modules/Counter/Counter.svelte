@@ -29,7 +29,11 @@
   ];
 </script>
 
-<div class="py-[50px] lg:py-[151px] my-[100px] lg:my-[200px] bg-pale-cream">
+<div
+  data-aos="fade-down"
+  data-aos-duration="2000"
+  class="py-[50px] lg:py-[151px] my-[100px] lg:my-[200px] bg-pale-cream"
+>
   <div
     class="h-full flex flex-col gap-y-[30px] lg:flex-row justify-center items-center"
   >

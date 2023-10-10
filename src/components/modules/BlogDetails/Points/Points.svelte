@@ -20,7 +20,8 @@
   ];
 </script>
 
-<div class="flex flex-col gap-8">
+<div data-aos="fade-right"
+  data-aos-duration="500" class="flex flex-col gap-8">
   {#each pointItems as pointItem}
     <PointItem {...pointItem} />
   {/each}

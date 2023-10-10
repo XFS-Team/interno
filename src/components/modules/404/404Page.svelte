@@ -5,6 +5,8 @@
 </script>
 
 <div
+  data-aos="fade-up"
+  data-aos-duration="1000"
   class="container flex flex-col gap-y-[30px] lg:gap-y-0 lg:flex-row items-center justify-between"
 >
   <div class="flex flex-col items-center lg:items-start lg:mr-[81px]">
@@ -12,7 +14,7 @@
       >404</Title
     >
     <Title
-      class="lg:w-[569px] mt-[15px] text-[35px] leading-[150%] tracking-[0.35px]"
+      class="lg:w-[569px] mt-[15px] text-[25px] leading-[150%] tracking-[0.35px]"
       >We are sorry, but the page you requested was not found</Title
     >
     <a href="/">

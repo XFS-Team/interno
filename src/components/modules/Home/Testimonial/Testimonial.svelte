@@ -24,17 +24,26 @@
   ];
 </script>
 
-<div class="container xl:relative">
-  <img class="hidden xl:block"
+<div
+  data-aos="fade-right"
+  data-aos-duration="500"
+  class="container xl:relative"
+>
+  <img
+    class="hidden xl:block"
     src="/images/Homepage/Testimonial/bg_testimonial.svg"
     alt="testimonial"
   />
 
   <div class="xl:absolute top-[88px] right-0 left-0 flex flex-col items-center">
-    <Title class="w-full lg:max-w-[547px] text-center text-[35px] lg:text-[50px] tracking-[1px]">
+    <Title
+      class="w-full lg:max-w-[547px] text-center text-[25px] lg:text-[50px] tracking-[1px]"
+    >
       What the People Thinks About Us
     </Title>
-    <div class="mt-[38px] flex flex-col xl:flex-row justify-between items-center gap-5">
+    <div
+      class="mt-[38px] flex flex-col xl:flex-row justify-between items-center gap-5"
+    >
       {#each personInfors as personInfor}
         <TestimonialContent {...personInfor} />
       {/each}

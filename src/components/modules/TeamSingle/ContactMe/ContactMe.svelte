@@ -9,9 +9,11 @@
 </script>
 
 <div
+  data-aos="fade-right"
+  data-aos-duration="1000"
   class="container py-[50px] lg:py-[200px] lg:px-[200px] flex flex-col items-center"
 >
-  <Title class="text-[35px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
+  <Title class="text-[25px] lg:text-[50px] leading-[150%] tracking-[0.5px]"
     >Contact Me</Title
   >
   <div class="flex flex-wrap items-center justify-between gap-y-[50px] my-7">

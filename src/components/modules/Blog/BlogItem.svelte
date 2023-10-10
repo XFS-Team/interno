@@ -6,12 +6,11 @@
   export let tag: string;
   export let content: string;
   export let date: string;
-  export let colorArrow: string;
 </script>
 
 <div
   {...$$props}
-  class=" p-[21px] rounded-[62px] border border-solid border-[#E7E7E7] flex flex-col {$$props.class}"
+  class="lg:w-[376px] p-[21px] rounded-[62px] border border-solid border-[#E7E7E7] flex flex-col hover:bg-pale-cream transition-all {$$props.class}"
 >
   <div class="relative">
     <img class="w-full" src={image} alt="blogImage" />
@@ -30,7 +29,7 @@
     <Text class="text-base tracking-[0.16px]">{date}</Text>
     <img
       class="w-[52px] h-[52px]"
-      src="/images/arrow_button_{colorArrow}.svg"
+      src="/images/arrow_button_default.svg"
       alt="arrowButton"
     />
   </div>

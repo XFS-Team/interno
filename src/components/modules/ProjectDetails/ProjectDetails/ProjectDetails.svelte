@@ -31,6 +31,8 @@
   class="container my-[100px] lg:my-[200px] flex flex-col items-center justify-between lg:gap-[100px]"
 >
   <div
+    data-aos="fade-right"
+    data-aos-duration="500"
     class="flex flex-col lg:flex-row items-center justify-between gap-[42px]"
   >
     <div
@@ -41,7 +43,7 @@
       {/each}
     </div>
     <div class="flex flex-col gap-[11px]">
-      <Title class="text-[35px] lg:text-[50px] text-center lg:text-left"
+      <Title class="text-[25px] lg:text-[50px] text-center lg:text-left"
         >Minimal Look Bedrooms</Title
       >
       <Text class="text-justify lg:text-left"
@@ -60,7 +62,11 @@
       >
     </div>
   </div>
-  <div class="relative mt-10 lg:mt-0">
+  <div
+    data-aos="fade-left"
+    data-aos-duration="2000"
+    class="relative mt-10 lg:mt-0"
+  >
     <img
       src="/images/ProjectDetails/Details/project_details.png"
       alt="projectDetails"

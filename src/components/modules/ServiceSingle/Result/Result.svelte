@@ -4,13 +4,14 @@
   import Title from "../../../common/Title/Title.svelte";
 </script>
 
-<div
+<div data-aos="fade-right"
+  data-aos-duration="500"
   class="container flex flex-col lg:flex-row justify-between items-center gap-[82px]"
 >
   <img src="/images/ServiceSingle/Result/result.png" alt="result" />
   <div class="flex flex-col items-center lg:items-start">
     <Title
-      class="text-center lg:text-left text-[35px] lg:text-[50px] tracking-[1px]"
+      class="text-center lg:text-left text-[25px] lg:text-[50px] tracking-[1px]"
       >We love design. That's how we got here.</Title
     >
     <Text class="text-center lg:text-left mt-[11px]"

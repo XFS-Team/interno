@@ -5,9 +5,12 @@
   export let title: string;
 </script>
 
-<div {...$$props} class={$$props.class}>
-  <div class="max-w-[358px] flex flex-col items-center justify-between">
-    <Title class="text-center text-[35px] lg:text-[25px]">
+<div
+  {...$$props}
+  class="hover:bg-pale-cream py-[83px] px-[20px] rounded-[30px] {$$props.class}"
+>
+  <div class="max-w-[333px] flex flex-col items-center justify-between">
+    <Title class="text-center text-[25px] lg:text-[25px]">
       {title}
     </Title>
     <div class=" text-[22px] font-[400] leading-[150%] tracking-[0.22px]" />

@@ -1,23 +1,27 @@
 <script lang="ts">
-  import Work from "../../Work/Work.svelte";
+  import Work from "../../Home/Work/Work.svelte";
   import WorkItem from "../../Work/WorkItem.svelte";
 
   const titles = [
-    { title: "2d/3d Art Work", class: "px-5 py-[83px]" },
-    {
-      title: "Interior Work",
-      class: "bg-pale-cream px-5 py-[83px] rounded-[30px]",
-    },
-    { title: "Decoration Work", class: "px-5 py-[83px]" },
+    "Project Plan",
+    "Interior Work",
+    "Realization",
+    "2d/3d Art Work",
+    "Interior Work",
+    "Decoration Work",
   ];
 </script>
 
-<div class="container">
+<div
+  data-aos="fade-right"
+  class="container mt-[70px] lg:mt-[120px] flex flex-col md:flex-row justify-center items-center gap-[42px]"
+>
   <div class="mb-[50px] lg:mb-[200px]">
-    <Work />
-    <div class="flex flex-col lg:flex-row items-center mt-[88px]">
+    <div
+      class="lg:flex-row flex-wrap items-center flex flex-col md:flex-row justify-center gap-x-[42px]"
+    >
       {#each titles as title}
-        <WorkItem {...title} />
+        <WorkItem {title} />
       {/each}
     </div>
   </div>
